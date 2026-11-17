@@ -1,0 +1,1024 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>吃瓜推特黑料俄罗斯-信息辨析与核验指南</title>
+<meta name="description" content="吃瓜推特黑料俄罗斯话题常混入剪辑截图与旧图新发。这里按账号来源、时间戳、原帖转述和平台规则拆解流传素材，给出可核对的判断方法与条目索引。">
+<meta name="keywords" content="吃瓜推特黑料俄罗斯">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23181b22'/%3E%3Ccircle cx='24' cy='26' r='9' fill='none' stroke='%23e2b23c' stroke-width='4'/%3E%3Cpath d='M34 34l14 14' stroke='%23e2b23c' stroke-width='5' stroke-linecap='round'/%3E%3Cpath d='M20 46h18' stroke='%23c8503f' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","name":"吃瓜推特黑料俄罗斯","url":"/","inLanguage":"zh-CN","description":"围绕推特流传的俄罗斯相关素材做来源核验、时间线梳理与说法对照的索引站。","potentialAction":{"@type":"SearchAction","target":"/#search","query-input":"required name=q"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"推特黑料截图没有原始链接怎么判断来源？","acceptedAnswer":{"@type":"Answer","text":"先看截图中是否保留 @ 用户名、发帖日期和界面语言。三者缺失的截图只能当成匿名转述，不能指向具体账号。可用推特高级搜索 from:账号 since: 日期 until: 日期 回查，若原帖已删除，第三方存档站或引用过该帖的媒体页面是次优证据。"}},{"@type":"Question","name":"俄罗斯官方通报与推特爆料冲突时信哪个？","acceptedAnswer":{"@type":"Answer","text":"分两类看。涉及伤亡、动员、预算等可统计事项，俄联邦统计局、财政部与地方政府的公开文件可交叉核对。涉及现场画面，先确认拍摄地点与时间，再看是否有同角度视频。推特爆料在官方口径之前出现并不等于更真实，常常只是转述更快。"}},{"@type":"Question","name":"旧视频被说成2026年新事件怎么识别？","acceptedAnswer":{"@type":"Answer","text":"抽帧后用反向图搜，查看最早出现时间。再查视频中出现的车牌制式、店铺招牌文字、天气与季节。2026年10月下旬莫斯科已有积雪记录，若所谓10月中旬视频里行道树全绿且行人短袖，时间标注大概率有误。"}},{"@type":"Question","name":"吃瓜推特黑料俄罗斯里的账号可信度怎么分层？","acceptedAnswer":{"@type":"Answer","text":"按原始素材比例分三层。第一层发布自拍视频、带定位和连续时间戳；第二层为编译型账号，标注来源但常省略日期；第三层只发截图与配文，不给出处。讨论具体事件时优先找第一层，第二层可作为线索，第三层只当传闻。"}},{"@type":"Question","name":"被指黑料的账号删帖后还能核验吗？","acceptedAnswer":{"@type":"Answer","text":"能，但证据等级下降。推特删除帖会在引用它的转推里留下文字片段，Wayback Machine 与 archive.today 可能保存快照。若只有二手截图且无可对照的时间戳，应标注为无法验证，而不是直接采信。"}}]}
+</script>
+<style>
+:root{
+  --ink:#191c22;
+  --ink-2:#3c424e;
+  --muted:#6a7180;
+  --line:#dfe2e8;
+  --line-2:#eceef2;
+  --bg:#f6f5f1;
+  --card:#ffffff;
+  --brand:#1f2a44;
+  --brand-2:#2e3d61;
+  --accent:#c8503f;
+  --accent-soft:#f7e6e2;
+  --gold:#b78a2c;
+  --gold-soft:#f6eeda;
+  --ok:#2c6b52;
+  --radius:10px;
+  --radius-s:6px;
+  --shadow:0 1px 2px rgba(25,28,34,.06),0 6px 18px rgba(25,28,34,.05);
+  --space:20px;
+  --maxw:1180px;
+  --sticky-h:96px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:var(--sticky-h)}
+body{
+  margin:0;background:var(--bg);color:var(--ink);
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans CJK SC",system-ui,sans-serif;
+  font-size:16px;line-height:1.78;-webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block}
+a{color:var(--brand-2);text-decoration:none}
+a:hover{text-decoration:underline}
+h1,h2,h3,h4{margin:0;line-height:1.35;letter-spacing:.01em}
+p{margin:0 0 14px}
+ul,ol{margin:0 0 14px;padding-left:1.2em}
+li{margin:0 0 8px}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 20px}
+:focus-visible{outline:3px solid var(--gold);outline-offset:2px;border-radius:4px}
+.skip{position:absolute;left:-9999px;top:0;background:var(--brand);color:#fff;padding:10px 16px;z-index:200}
+.skip:focus{left:12px;top:12px}
+
+/* ============ 吸顶公告条 + 页头 ============ */
+.sticky-shell{position:sticky;top:0;z-index:100}
+.notice{
+  background:var(--brand);color:#e8e6df;font-size:13.5px;
+  border-bottom:1px solid rgba(255,255,255,.12);
+}
+.notice .wrap{display:flex;gap:14px;align-items:center;min-height:36px;padding-top:5px;padding-bottom:5px;flex-wrap:wrap}
+.notice b{color:#fff;font-weight:600}
+.notice .tag{
+  display:inline-block;background:var(--accent);color:#fff;font-size:11.5px;
+  padding:1px 7px;border-radius:3px;letter-spacing:.06em;flex:none;
+}
+.notice a{color:#f0d9a8;text-decoration:underline;text-underline-offset:2px}
+.notice .n-extra{margin-left:auto;color:#b9c0cf;font-size:12.5px}
+
+header.site{
+  background:rgba(255,255,255,.96);backdrop-filter:blur(8px);
+  border-bottom:1px solid var(--line);box-shadow:0 2px 10px rgba(25,28,34,.04);
+}
+.header-in{display:flex;align-items:center;gap:18px;min-height:58px;flex-wrap:wrap;padding-top:8px;padding-bottom:8px}
+.brand{display:flex;align-items:center;gap:10px;flex:none}
+.brand svg{width:36px;height:36px;flex:none}
+.brand .bt{display:flex;flex-direction:column;line-height:1.15}
+.brand .bt strong{font-size:17px;letter-spacing:.02em;color:var(--brand)}
+.brand .bt span{font-size:11.5px;color:var(--muted);letter-spacing:.14em}
+.mainnav{display:flex;gap:2px;flex-wrap:wrap;margin-left:6px}
+.mainnav a{
+  font-size:14.5px;color:var(--ink-2);padding:7px 10px;border-radius:var(--radius-s);
+  white-space:nowrap;
+}
+.mainnav a:hover{background:var(--line-2);text-decoration:none;color:var(--brand)}
+.mainnav a.on{background:var(--brand);color:#fff}
+.head-tools{margin-left:auto;display:flex;align-items:center;gap:10px}
+.searchbox{display:flex;align-items:center;border:1px solid var(--line);border-radius:var(--radius-s);background:#fff;overflow:hidden}
+.searchbox input{
+  border:0;padding:7px 10px;font-size:14px;width:150px;color:var(--ink);
+  font-family:inherit;background:transparent;
+}
+.searchbox input:focus{outline:none}
+.searchbox button{
+  border:0;border-left:1px solid var(--line);background:var(--line-2);color:var(--ink-2);
+  padding:7px 12px;font-size:14px;cursor:pointer;font-family:inherit;
+}
+.searchbox button:hover{background:var(--brand);color:#fff}
+.btn-quiet{
+  display:inline-block;font-size:14px;padding:7px 12px;border-radius:var(--radius-s);
+  border:1px solid var(--brand-2);color:var(--brand-2);background:#fff;white-space:nowrap;
+}
+.btn-quiet:hover{background:var(--brand-2);color:#fff;text-decoration:none}
+.menu-btn{
+  display:none;border:1px solid var(--line);background:#fff;border-radius:var(--radius-s);
+  padding:7px 11px;font-size:14px;font-family:inherit;cursor:pointer;color:var(--ink-2);
+}
+.search-note{
+  display:none;font-size:13.5px;color:var(--accent);background:var(--accent-soft);
+  border-radius:var(--radius-s);padding:8px 12px;margin:8px 0 0;
+}
+.search-note.show{display:block}
+
+/* ============ 首屏 ============ */
+.hero{position:relative;overflow:hidden;background:
+  radial-gradient(1100px 340px at 78% -10%, rgba(200,80,63,.14), transparent 62%),
+  radial-gradient(900px 300px at 12% 110%, rgba(31,42,68,.12), transparent 60%),
+  #fff;
+  border-bottom:1px solid var(--line);
+}
+.hero-in{display:grid;grid-template-columns:1.15fr .85fr;gap:36px;align-items:center;padding:44px 0 46px}
+.kicker{display:inline-flex;align-items:center;gap:8px;font-size:13px;color:var(--brand-2);letter-spacing:.1em;margin-bottom:14px}
+.kicker .dot{width:7px;height:7px;border-radius:50%;background:var(--accent);display:inline-block}
+h1{font-size:clamp(28px,4.1vw,42px);color:var(--brand);letter-spacing:.02em;margin-bottom:14px}
+.lede{font-size:16.5px;color:var(--ink-2);max-width:38em;margin-bottom:20px}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:22px}
+.btn{
+  display:inline-block;padding:11px 20px;border-radius:var(--radius-s);font-size:15px;
+  background:var(--brand);color:#fff;border:1px solid var(--brand);
+}
+.btn:hover{background:var(--brand-2);border-color:var(--brand-2);text-decoration:none}
+.btn.alt{background:#fff;color:var(--brand);border-color:var(--line)}
+.btn.alt:hover{background:var(--line-2);color:var(--brand)}
+.hero-stats{display:flex;gap:26px;flex-wrap:wrap;border-top:1px dashed var(--line);padding-top:16px}
+.hero-stats div{font-size:13px;color:var(--muted)}
+.hero-stats b{display:block;font-size:22px;color:var(--brand);line-height:1.2;font-variant-numeric:tabular-nums}
+.hero-art{position:relative;aspect-ratio:1/.92;min-height:250px}
+.hero-art svg{width:100%;height:100%;display:block}
+.art-note{position:absolute;right:4px;bottom:2px;font-size:11.5px;color:var(--muted);letter-spacing:.08em}
+
+/* ============ 布局 ============ */
+.layout{display:grid;grid-template-columns:minmax(0,1fr) 310px;gap:34px;padding:40px 0 10px;align-items:start}
+.main-col{min-width:0}
+.side-col{position:sticky;top:calc(var(--sticky-h) + 16px);display:flex;flex-direction:column;gap:18px}
+section.block{margin-bottom:44px;scroll-margin-top:calc(var(--sticky-h) + 8px)}
+.block-head{display:flex;align-items:baseline;gap:12px;margin-bottom:8px;flex-wrap:wrap}
+.block-head h2{font-size:22px;color:var(--brand)}
+.block-head .sub{font-size:13px;color:var(--muted)}
+.block-desc{font-size:14.5px;color:var(--ink-2);margin-bottom:18px;max-width:52em}
+.hr-rule{height:1px;background:var(--line);border:0;margin:0 0 18px}
+
+/* 卡片通用 */
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow)}
+.card-pad{padding:18px}
+.tagrow{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+.chip{
+  font-size:12.5px;color:var(--brand-2);background:var(--line-2);border:1px solid var(--line);
+  padding:3px 9px;border-radius:20px;white-space:nowrap;
+}
+.chip:hover{background:var(--brand);color:#fff;border-color:var(--brand);text-decoration:none}
+.chip.hot{background:var(--accent-soft);border-color:#eec6bd;color:#9d3a2c}
+.meta{font-size:12.5px;color:var(--muted);letter-spacing:.02em}
+
+/* 概览：不等权网格 */
+.overview-grid{display:grid;grid-template-columns:1.35fr 1fr 1fr;gap:16px}
+.ov-lead{grid-row:span 2;padding:0;overflow:hidden;display:flex;flex-direction:column}
+.ov-lead img{width:100%;height:auto;aspect-ratio:16/9;object-fit:cover}
+.ov-lead .body{padding:18px}
+.ov-lead h3{font-size:19px;margin-bottom:8px;color:var(--brand)}
+.ov-item{padding:15px 16px}
+.ov-item h3{font-size:15.5px;margin-bottom:6px;color:var(--ink)}
+.ov-item p{font-size:13.5px;color:var(--ink-2);margin:0}
+.ov-item .meta{display:block;margin-top:8px}
+
+/* 精选：卡片网格 */
+.pick-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.pick-card{padding:0;overflow:hidden;display:flex;flex-direction:column;transition:transform .18s ease,box-shadow .18s ease}
+.pick-card:hover{transform:translateY(-3px);box-shadow:0 8px 22px rgba(25,28,34,.10)}
+.pick-card img{aspect-ratio:16/10;object-fit:cover;width:100%;height:auto}
+.pick-card .body{padding:14px 16px 16px;display:flex;flex-direction:column;gap:6px;flex:1}
+.pick-card h3{font-size:15.5px;color:var(--ink)}
+.pick-card p{font-size:13.5px;color:var(--ink-2);margin:0;flex:1}
+.pick-card .meta{font-size:12px}
+
+/* 最新更新：紧凑列表 */
+.upd-list{list-style:none;padding:0;margin:0;border-top:1px solid var(--line)}
+.upd-list li{display:grid;grid-template-columns:78px 1fr auto;gap:14px;align-items:baseline;padding:12px 0;border-bottom:1px solid var(--line-2);margin:0}
+.upd-list time{font-size:12.5px;color:var(--accent);font-variant-numeric:tabular-nums;white-space:nowrap}
+.upd-list .t{font-size:15px;color:var(--ink)}
+.upd-list .src{font-size:12px;color:var(--muted);white-space:nowrap}
+
+/* 分类入口：标签索引 / 网格 */
+.cat-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.cat-a{
+  display:block;padding:14px 14px 15px;background:var(--card);border:1px solid var(--line);
+  border-radius:var(--radius-s);color:var(--ink);
+}
+.cat-a:hover{border-color:var(--brand-2);text-decoration:none;background:#fbfaf6}
+.cat-a b{display:block;font-size:15px;color:var(--brand);margin-bottom:4px}
+.cat-a span{font-size:12.5px;color:var(--muted);line-height:1.6}
+
+/* 深度解析：分栏正文 */
+.analysis{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:26px 28px;box-shadow:var(--shadow)}
+.analysis > h2{font-size:23px;color:var(--brand);margin-bottom:6px}
+.analysis .lead{font-size:15px;color:var(--ink-2);max-width:46em;margin-bottom:20px}
+.analysis h3{font-size:17.5px;color:var(--brand);margin:26px 0 8px;padding-top:16px;border-top:1px solid var(--line-2)}
+.analysis h3:first-of-type{border-top:0;padding-top:0;margin-top:6px}
+.analysis p{font-size:15px;color:var(--ink-2)}
+.pullquote{
+  border-left:4px solid var(--accent);background:#fbf7f4;padding:14px 18px;margin:18px 0;
+  font-size:15px;color:var(--ink);border-radius:0 var(--radius-s) var(--radius-s) 0;
+}
+.pullquote cite{display:block;font-style:normal;font-size:12.5px;color:var(--muted);margin-top:8px}
+.verify-box{background:var(--gold-soft);border:1px solid #e3d3a8;border-radius:var(--radius-s);padding:16px 18px;margin:16px 0}
+.verify-box h4{font-size:14.5px;color:#7a5b12;margin-bottom:8px;letter-spacing:.03em}
+.verify-box ol{margin:0;padding-left:1.3em}
+.verify-box li{font-size:14px;color:#5c4712}
+table.cmp{width:100%;border-collapse:collapse;margin:14px 0;font-size:14px}
+table.cmp th,table.cmp td{border:1px solid var(--line);padding:9px 11px;text-align:left;vertical-align:top}
+table.cmp th{background:var(--line-2);color:var(--brand);font-weight:600;font-size:13.5px}
+table.cmp td{color:var(--ink-2)}
+.tl{list-style:none;padding:0;margin:14px 0;border-left:2px solid var(--line)}
+.tl li{position:relative;padding:0 0 16px 20px;margin:0}
+.tl li::before{content:"";position:absolute;left:-7px;top:7px;width:12px;height:12px;border-radius:50%;background:#fff;border:3px solid var(--brand-2)}
+.tl b{display:block;font-size:14px;color:var(--brand)}
+.tl span{font-size:13.5px;color:var(--ink-2)}
+
+/* 体验指南：编号步骤 */
+.steps{counter-reset:s;display:grid;gap:12px}
+.step{
+  counter-increment:s;position:relative;padding:15px 16px 15px 58px;background:var(--card);
+  border:1px solid var(--line);border-radius:var(--radius-s);
+}
+.step::before{
+  content:counter(s);position:absolute;left:16px;top:15px;width:28px;height:28px;border-radius:50%;
+  background:var(--brand);color:#fff;font-size:14px;display:flex;align-items:center;justify-content:center;
+  font-variant-numeric:tabular-nums;
+}
+.step b{display:block;font-size:15px;color:var(--brand);margin-bottom:3px}
+.step p{font-size:13.8px;color:var(--ink-2);margin:0}
+
+/* 对照面板 */
+.panel2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.panel{border-radius:var(--radius);padding:18px;border:1px solid var(--line)}
+.panel.solid{background:#fbf7f4;border-color:#ecd9d2}
+.panel.soft{background:#f4f6fa;border-color:#d9dfea}
+.panel h3{font-size:15px;margin-bottom:8px}
+.panel.solid h3{color:#9d3a2c}
+.panel.soft h3{color:var(--brand-2)}
+.panel ul{margin:0;padding-left:1.15em}
+.panel li{font-size:13.8px;color:var(--ink-2)}
+
+/* FAQ */
+details.faq{background:var(--card);border:1px solid var(--line);border-radius:var(--radius-s);margin-bottom:10px;overflow:hidden}
+details.faq summary{
+  cursor:pointer;padding:14px 46px 14px 16px;font-size:15px;color:var(--brand);
+  font-weight:600;list-style:none;position:relative;
+}
+details.faq summary::-webkit-details-marker{display:none}
+details.faq summary::after{
+  content:"+";position:absolute;right:16px;top:50%;transform:translateY(-50%);
+  font-size:19px;color:var(--accent);font-weight:400;
+}
+details.faq[open] summary::after{content:"–"}
+details.faq .ans{padding:0 16px 16px;font-size:14.2px;color:var(--ink-2)}
+details.faq .ans p:last-child{margin-bottom:0}
+
+/* 评论 */
+.cmt-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.cmt{padding:15px 16px;background:var(--card);border:1px solid var(--line);border-radius:var(--radius-s);font-size:13.8px}
+.cmt .who{display:flex;align-items:center;gap:8px;margin-bottom:7px}
+.av{width:26px;height:26px;border-radius:50%;background:var(--brand-2);color:#fff;font-size:12px;display:flex;align-items:center;justify-content:center;flex:none}
+.cmt .who b{font-size:13.5px;color:var(--ink)}
+.cmt .who .meta{margin-left:auto;font-size:12px}
+.cmt p{margin:0;color:var(--ink-2)}
+.cmt .on-which{display:inline-block;margin-top:8px;font-size:12px;color:var(--accent);background:var(--accent-soft);padding:2px 8px;border-radius:3px}
+
+/* 资讯 */
+.news-list{display:grid;gap:10px}
+.news{display:grid;grid-template-columns:1fr auto;gap:14px;padding:14px 16px;background:var(--card);border:1px solid var(--line);border-radius:var(--radius-s);align-items:start}
+.news h3{font-size:15px;color:var(--ink);margin-bottom:4px}
+.news p{font-size:13.5px;color:var(--ink-2);margin:0}
+.news .meta{white-space:nowrap;font-size:12px}
+
+/* 榜单 / 可信度分层 */
+.tier{display:grid;gap:10px}
+.tier-row{display:grid;grid-template-columns:76px 1fr;gap:14px;align-items:stretch;background:var(--card);border:1px solid var(--line);border-radius:var(--radius-s);overflow:hidden}
+.tier-row .lv{display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:600;color:#fff;letter-spacing:.04em;padding:12px 6px;text-align:center;line-height:1.4}
+.tier-row.t1 .lv{background:#2c6b52}
+.tier-row.t2 .lv{background:#b78a2c}
+.tier-row.t3 .lv{background:#8a8f9b}
+.tier-row .body{padding:13px 16px 14px}
+.tier-row b{font-size:14.5px;color:var(--brand);display:block;margin-bottom:3px}
+.tier-row p{font-size:13.5px;color:var(--ink-2);margin:0}
+
+/* 侧栏 */
+.side-card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:16px 17px;box-shadow:var(--shadow)}
+.side-card h3{font-size:15px;color:var(--brand);margin-bottom:10px;display:flex;align-items:center;gap:8px}
+.side-card h3::before{content:"";width:4px;height:15px;background:var(--accent);border-radius:2px;display:inline-block}
+.side-nav{display:flex;flex-direction:column;gap:2px}
+.side-nav a{font-size:14px;color:var(--ink-2);padding:6px 9px;border-radius:var(--radius-s);border-left:2px solid transparent}
+.side-nav a:hover{background:var(--line-2);text-decoration:none}
+.side-nav a.active{background:var(--gold-soft);border-left-color:var(--gold);color:#6b4f10;font-weight:600}
+.mini-list{list-style:none;padding:0;margin:0}
+.mini-list li{padding:9px 0;border-bottom:1px dashed var(--line);margin:0}
+.mini-list li:last-child{border-bottom:0;padding-bottom:0}
+.mini-list b{display:block;font-size:14px;color:var(--ink);font-weight:500}
+.mini-list .meta{font-size:12px}
+.rank-list{counter-reset:r;list-style:none;padding:0;margin:0}
+.rank-list li{counter-increment:r;display:grid;grid-template-columns:22px 1fr;gap:8px;padding:8px 0;margin:0;font-size:13.8px;color:var(--ink-2);border-bottom:1px dashed var(--line)}
+.rank-list li:last-child{border-bottom:0}
+.rank-list li::before{content:counter(r);font-size:12px;color:#fff;background:var(--brand-2);width:20px;height:20px;border-radius:4px;display:flex;align-items:center;justify-content:center;margin-top:3px}
+.rank-list li:nth-child(1)::before{background:var(--accent)}
+.rank-list a{color:var(--ink-2)}
+
+/* 页尾 */
+footer.site{
+  margin-top:26px;background:var(--brand);color:#c9cfdc;font-size:14px;
+  border-top:4px solid var(--gold);
+}
+.foot-top{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:30px;padding:40px 0 30px}
+.foot-brand{display:flex;gap:11px;align-items:center;margin-bottom:12px}
+.foot-brand svg{width:38px;height:38px;flex:none}
+.foot-brand strong{color:#fff;font-size:17px;letter-spacing:.02em}
+.foot-brand span{display:block;font-size:11.5px;color:#8f98ab;letter-spacing:.14em}
+footer.site p{color:#aab2c2;font-size:13.5px;line-height:1.8}
+.foot-col h4{color:#fff;font-size:14.5px;margin-bottom:10px;letter-spacing:.04em}
+.foot-col ul{list-style:none;padding:0;margin:0}
+.foot-col li{margin-bottom:7px}
+.foot-col a{color:#aab2c2;font-size:13.5px}
+.foot-col a:hover{color:#fff}
+.foot-note{background:rgba(0,0,0,.18);padding:16px 0}
+.foot-note .wrap{display:flex;gap:18px;flex-wrap:wrap;font-size:12.5px;color:#93a0b6;align-items:center}
+.foot-note .upd{color:#d9c48d}
+.foot-note .sep{color:#4b5876}
+
+/* 回到顶部 */
+.to-top{
+  position:fixed;right:18px;bottom:18px;z-index:90;width:44px;height:44px;border-radius:50%;
+  border:1px solid var(--line);background:#fff;color:var(--brand);font-size:18px;
+  box-shadow:var(--shadow);cursor:pointer;display:none;align-items:center;justify-content:center;
+}
+.to-top.show{display:flex}
+.to-top:hover{background:var(--brand);color:#fff}
+
+/* 平板 */
+@media (max-width:980px){
+  .hero-in{grid-template-columns:1fr;gap:22px;padding:34px 0 38px}
+  .hero-art{max-width:420px;min-height:0;order:-1;aspect-ratio:16/10}
+  .layout{grid-template-columns:1fr;gap:30px}
+  .side-col{position:static;order:2;display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  .overview-grid{grid-template-columns:1fr 1fr}
+  .ov-lead{grid-column:span 2;grid-row:auto}
+  .pick-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .cat-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .foot-top{grid-template-columns:1fr 1fr;gap:24px}
+}
+/* 手机 */
+@media (max-width:720px){
+  body{font-size:15.5px}
+  .menu-btn{display:inline-block}
+  .mainnav{
+    display:none;width:100%;flex-direction:column;gap:0;margin:0;
+    border-top:1px solid var(--line);padding-top:8px;
+  }
+  .mainnav.open{display:flex}
+  .mainnav a{padding:10px 8px;border-radius:0;border-bottom:1px solid var(--line-2)}
+  .head-tools{margin-left:auto;gap:8px}
+  .searchbox input{width:112px}
+  .notice .n-extra{display:none}
+  .overview-grid,.pick-grid,.cat-grid,.cmt-grid,.panel2{grid-template-columns:1fr}
+  .ov-lead{grid-column:auto}
+  .upd-list li{grid-template-columns:64px 1fr;gap:10px}
+  .upd-list .src{grid-column:2;font-size:11.5px}
+  .side-col{grid-template-columns:1fr}
+  .analysis{padding:20px 16px}
+  .news{grid-template-columns:1fr}
+  .news .meta{white-space:normal}
+  .tier-row{grid-template-columns:64px 1fr}
+  .foot-top{grid-template-columns:1fr;padding:30px 0 20px}
+  .hero-stats{gap:18px}
+  .to-top{right:12px;bottom:12px;width:40px;height:40px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{transition:none!important;animation:none!important}
+  .pick-card:hover{transform:none}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+<a class="skip" href="#main">跳到正文</a>
+
+<div class="sticky-shell">
+  <div class="notice" role="region" aria-label="更新公告">
+    <div class="wrap">
+      <span class="tag">更新</span>
+      <span><b>2026-11-08</b> 新增 6 条来源核验记录，回查 <b>@rus_events_ru</b> 10 月 30 日视频的时间戳争议。</span>
+      <a href="#updates">看更新时间线</a>
+      <span class="n-extra">本日已归档截图 41 张 · 可核对原帖 27 条</span>
+    </div>
+  </div>
+  <header class="site">
+    <div class="wrap header-in">
+      <a class="brand" href="/#top" aria-label="吃瓜推特黑料俄罗斯 首页">
+        <svg viewBox="0 0 64 64" role="img" aria-hidden="true">
+          <rect width="64" height="64" rx="14" fill="#1f2a44"/>
+          <circle cx="24" cy="25" r="9" fill="none" stroke="#e2b23c" stroke-width="4"/>
+          <path d="M33 33l14 15" stroke="#e2b23c" stroke-width="5" stroke-linecap="round"/>
+          <path d="M18 47h20" stroke="#c8503f" stroke-width="4" stroke-linecap="round"/>
+          <circle cx="24" cy="25" r="2.4" fill="#e2b23c"/>
+        </svg>
+        <span class="bt"><strong>吃瓜推特黑料俄罗斯</strong><span>SOURCE CHECK</span></span>
+      </a>
+      <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="mainnav">栏目菜单</button>
+      <nav class="mainnav" id="mainnav" aria-label="主题导航">
+        <a href="/#overview">领域概览</a>
+        <a href="/#picks">精选核验</a>
+        <a href="/#updates">最新更新</a>
+        <a href="/#channels">频道分类</a>
+        <a href="/#analysis">深度解析</a>
+        <a href="/#guide">体验指南</a>
+        <a href="/#faq">问答</a>
+        <a href="/#comments">读者评论</a>
+      </nav>
+      <div class="head-tools">
+        <div class="searchbox">
+          <label for="q" style="position:absolute;left:-9999px">站内查找条目</label>
+          <input id="q" type="search" placeholder="查条目 / 账号 / 日期" autocomplete="off">
+          <button id="qBtn" type="button">查找</button>
+        </div>
+        <a class="btn-quiet" href="/#guide">核验流程</a>
+      </div>
+    </div>
+    <div class="wrap"><p class="search-note" id="searchNote" role="status" aria-live="polite"></p></div>
+  </header>
+</div>
+
+<main id="main">
+  <section class="hero" id="top">
+    <div class="wrap hero-in">
+      <div class="hero-copy">
+        <span class="kicker"><span class="dot"></span>推特流传素材 · 来源与时间线核验</span>
+        <h1>吃瓜推特黑料俄罗斯</h1>
+        <p class="lede">推特上关于俄罗斯的爆料，七成以上在传播第三手。这里按账号、时间戳、原帖措辞和平台删帖记录逐条拆开，把截图、转述与能核对的原帖分开摆放，方便你判断哪一段值得信、哪一段只能当传闻。</p>
+        <div class="hero-actions">
+          <a class="btn" href="/#picks">进入精选核验</a>
+          <a class="btn alt" href="/#analysis">读深度解析</a>
+        </div>
+        <div class="hero-stats">
+          <div><b>128</b>已核验条目</div>
+          <div><b>41</b>本周归档截图</div>
+          <div><b>9</b>可信度分层样本</div>
+          <div><b>2026-11-08</b>数据截止</div>
+        </div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <svg viewBox="0 0 420 386" role="img">
+          <defs>
+            <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#e9e4d6"/><stop offset="1" stop-color="#d6d0c0"/>
+            </linearGradient>
+            <linearGradient id="g2" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#2e3d61"/><stop offset="1" stop-color="#1f2a44"/>
+            </linearGradient>
+          </defs>
+          <rect x="8" y="8" width="404" height="370" rx="16" fill="url(#g1)"/>
+          <rect x="34" y="40" width="248" height="176" rx="10" fill="#ffffff" stroke="#c9c2b2"/>
+          <rect x="34" y="40" width="248" height="30" rx="10" fill="url(#g2)"/>
+          <rect x="34" y="60" width="248" height="10" fill="url(#g2)"/>
+          <circle cx="54" cy="55" r="5" fill="#e2b23c"/>
+          <circle cx="70" cy="55" r="5" fill="#c8503f"/>
+          <rect x="50" y="86" width="30" height="30" rx="15" fill="#dfe2e8"/>
+          <rect x="90" y="90" width="120" height="8" rx="4" fill="#3c424e"/>
+          <rect x="90" y="104" width="70" height="6" rx="3" fill="#b9b3a4"/>
+          <rect x="50" y="128" width="216" height="7" rx="3.5" fill="#cfc8b8"/>
+          <rect x="50" y="144" width="196" height="7" rx="3.5" fill="#cfc8b8"/>
+          <rect x="50" y="160" width="150" height="7" rx="3.5" fill="#dcd5c6"/>
+          <rect x="50" y="182" width="66" height="20" rx="10" fill="#f7e6e2"/>
+          <text x="60" y="196" font-size="11" fill="#9d3a2c" font-family="sans-serif">截图待核</text>
+          <rect x="230" y="150" width="200" height="182" rx="12" fill="#ffffff" stroke="#c9c2b2"/>
+          <circle cx="262" cy="184" r="16" fill="#2c6b52"/>
+          <path d="M256 184l5 6 9-11" stroke="#fff" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <rect x="288" y="176" width="112" height="9" rx="4.5" fill="#3c424e"/>
+          <rect x="288" y="191" width="72" height="6" rx="3" fill="#b9b3a4"/>
+          <line x1="250" y1="216" x2="410" y2="216" stroke="#eceef2" stroke-width="2"/>
+          <rect x="250" y="230" width="34" height="7" rx="3.5" fill="#c8503f"/>
+          <rect x="292" y="230" width="90" height="7" rx="3.5" fill="#cfc8b8"/>
+          <rect x="250" y="248" width="140" height="7" rx="3.5" fill="#cfc8b8"/>
+          <rect x="250" y="266" width="110" height="7" rx="3.5" fill="#dcd5c6"/>
+          <rect x="250" y="292" width="76" height="22" rx="6" fill="#f6eeda" stroke="#e3d3a8"/>
+          <text x="260" y="307" font-size="11" fill="#7a5b12" font-family="sans-serif">时间戳匹配</text>
+          <path d="M300 340l24-14 24 14" stroke="#b78a2c" stroke-width="3" fill="none" stroke-linecap="round"/>
+          <circle cx="324" cy="322" r="6" fill="#c8503f"/>
+        </svg>
+        <span class="art-note">示意构图 · 非真实截屏</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap">
+    <div class="layout">
+      <div class="main-col">
+
+        <!-- 领域概览 -->
+        <section class="block" id="overview">
+          <div class="block-head"><h2>领域概览：推特俄罗斯爆料的四种素材形态</h2><span class="sub">2026-11-08 整理</span></div>
+          <p class="block-desc">同一件事在推特上往往以四种形态出现：现场自拍视频、编译型账号的剪辑、只有文字的爆料帖、以及被二次搬运的中文截图。四种形态的可核验程度差别很大，混在一起讨论就容易把猜测当成事实。</p>
+          <div class="overview-grid">
+            <article class="card ov-lead">
+              <img src="https://picsum.photos/seed/twitter-russia-source/640/360" width="640" height="360" loading="lazy" alt="桌面上的手机屏幕与打印出的截图对照，用于说明来源核验">
+              <div class="body">
+                <h3>一条爆料从原帖到中文圈，平均经过 2.7 次转手</h3>
+                <p>10 月 26 日一条关于莫斯科州仓库火灾的视频，先在俄语账号发布，经英语编译号加字幕，再被中文账号截去水印。到第三手时，原始发布时间已经丢失，画面被配上了完全不同的地点说明。</p>
+                <span class="meta">形态：视频 → 加字幕编译 → 中文截图</span>
+                <div class="tagrow">
+                  <a class="chip" href="/#updates">转手链路</a>
+                  <a class="chip" href="/#analysis">时间戳核验</a>
+                </div>
+              </div>
+            </article>
+            <article class="card ov-item">
+              <h3>现场自拍视频</h3>
+              <p>账号持续更新同一地点，画面里出现路牌、店铺名、天气。可反查定位，也可通过连续时间戳排出顺序。数量少，可信度最高。</p>
+              <span class="meta">占比约 12%</span>
+            </article>
+            <article class="card ov-item">
+              <h3>编译型剪辑</h3>
+              <p>把多段素材剪成一条，配字幕与旁白。来源常写“网络”，日期省略。线索价值高，直接引用风险大。</p>
+              <span class="meta">占比约 34%</span>
+            </article>
+            <article class="card ov-item">
+              <h3>纯文字爆料帖</h3>
+              <p>列出人名、机构、金额。没有附件，靠转发扩散。真伪取决于作者此前记录，单条无法验证。</p>
+              <span class="meta">占比约 39%</span>
+            </article>
+            <article class="card ov-item">
+              <h3>中文二次截图</h3>
+              <p>把推特界面截成图，加中文翻译。界面语言、时间、用户名经常被裁掉，是误传最多的形态。</p>
+              <span class="meta">占比约 15%</span>
+            </article>
+          </div>
+        </section>
+
+        <!-- 精选内容推荐 -->
+        <section class="block" id="picks">
+          <div class="block-head"><h2>精选核验：六条值得先看的条目</h2><span class="sub">按可核对材料完整度排序</span></div>
+          <p class="block-desc">这六条不是最热门的，而是原始材料保留得最全的。每条都标注了可回查的账号、日期和界面语言，方便自己再核一遍。</p>
+          <div class="pick-grid">
+            <article class="card pick-card">
+              <img src="https://picsum.photos/seed/moscow-warehouse-fire/480/300" width="480" height="300" loading="lazy" alt="夜间仓库火场与消防车灯光的示意图">
+              <div class="body">
+                <h3>莫斯科州仓库火灾：三段视频的时间顺序</h3>
+                <p>10 月 26 日 21:40 起，三个账号从不同角度拍摄。以烟柱方向和消防车到场顺序可排出先后，最早一段并非传播最广的那段。</p>
+                <span class="meta">账号 3 · 原帖 3 · 可定位</span>
+              </div>
+            </article>
+            <article class="card pick-card">
+              <img src="https://picsum.photos/seed/russia-mobilization-doc/480/300" width="480" height="300" loading="lazy" alt="纸质通知单与钢笔放在桌上的示意图">
+              <div class="body">
+                <h3>征兵通知单扫描件的格式差异</h3>
+                <p>流传的两版通知单在印章位置和编号前缀上不同。2026 年 9 月起部分地区改用新版式，旧版仍在流通，不能只凭版式判定造假。</p>
+                <span class="meta">版本对照 · 2 份文件</span>
+              </div>
+            </article>
+            <article class="card pick-card">
+              <img src="https://picsum.photos/seed/st-petersburg-queue/480/300" width="480" height="300" loading="lazy" alt="圣彼得堡街头排队人群的示意图">
+              <div class="body">
+                <h3>圣彼得堡排队视频：季节与衣着对不上</h3>
+                <p>标注为 10 月中旬的视频里，行道树全绿、行人穿短袖。当地 10 月 14 日最低温 2℃，画面与时间至少差六周。</p>
+                <span class="meta">旧视频新发 · 已标注</span>
+              </div>
+            </article>
+            <article class="card pick-card">
+              <img src="https://picsum.photos/seed/telegram-channel-copy/480/300" width="480" height="300" loading="lazy" alt="两部手机并排显示不同语言的社交平台界面">
+              <div class="body">
+                <h3>Telegram 频道与推特账号的内容差异</h3>
+                <p>同一爆料在 Telegram 原频道有完整段落，推特版本删去两句限定语。删掉的部分恰好是“据当地居民称”这类转述标记。</p>
+                <span class="meta">跨平台比对 · 原文措辞</span>
+              </div>
+            </article>
+            <article class="card pick-card">
+              <img src="https://picsum.photos/seed/russia-budget-figure/480/300" width="480" height="300" loading="lazy" alt="财务报表数字与计算器的示意图">
+              <div class="body">
+                <h3>国防预算数字被截断后的误读</h3>
+                <p>流传截图只保留总额，省略了“其中包含往年结转”的脚注。财政部 10 月 31 日公布的完整表格里，这一项占 18%。</p>
+                <span class="meta">官方表格 · 脚注缺失</span>
+              </div>
+            </article>
+            <article class="card pick-card">
+              <img src="https://picsum.photos/seed/account-suspension/480/300" width="480" height="300" loading="lazy" alt="社交平台账号页面显示不可用的示意图">
+              <div class="body">
+                <h3>被冻结账号的最后 24 小时</h3>
+                <p>@rus_events_ru 在 10 月 30 日连续发布 11 条，随后账号不可见。第三方存档保留其中 7 条，另 4 条只剩转推里的文字片段。</p>
+                <span class="meta">删帖 · 存档 7/11</span>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- 最新更新 -->
+        <section class="block" id="updates">
+          <div class="block-head"><h2>最新更新：十条可回查的条目变动</h2><span class="sub">时间为 2026-11-08 及之前 30 天</span></div>
+          <p class="block-desc">按更新日期倒序排列，左侧是归档时间，右侧是来源与状态。点击标题可跳到对应栏目；标注“待核”的条目尚未找到原始发布记录。</p>
+          <ul class="upd-list">
+            <li><time datetime="2026-11-08">11-08</time><span class="t"><a href="/#analysis">@rus_events_ru 视频时间戳争议补录第 6 条对照</a></span><span class="src">推特存档 · 已核</span></li>
+            <li><time datetime="2026-11-07">11-07</time><span class="t"><a href="/#channels">新增“俄语原帖直译”频道索引 14 条</a></span><span class="src">频道页 · 已上线</span></li>
+            <li><time datetime="2026-11-06">11-06</time><span class="t"><a href="/#picks">圣彼得堡排队视频判定为旧素材</a></span><span class="src">反向图搜 · 已核</span></li>
+            <li><time datetime="2026-11-05">11-05</time><span class="t"><a href="/#tiers">可信度分层新增“编译型账号”样本 3 个</a></span><span class="src">分层表 · 已核</span></li>
+            <li><time datetime="2026-11-03">11-03</time><span class="t"><a href="/#picks">征兵通知单两版式差异说明补全</a></span><span class="src">文件对照 · 已核</span></li>
+            <li><time datetime="2026-11-01">11-01</time><span class="t"><a href="/#news">财政部预算表格脚注缺失条目上线</a></span><span class="src">官方文件 · 已核</span></li>
+            <li><time datetime="2026-10-31">10-31</time><span class="t"><a href="/#analysis">莫斯科州仓库火灾三段视频排定先后</a></span><span class="src">视频比对 · 已核</span></li>
+            <li><time datetime="2026-10-30">10-30</time><span class="t"><a href="/#picks">@rus_events_ru 账号不可见，开始存档</a></span><span class="src">账号页 · 进行中</span></li>
+            <li><time datetime="2026-10-28">10-28</time><span class="t"><a href="/#guide">核验流程新增“抽帧反搜”操作说明</a></span><span class="src">指南页 · 已上线</span></li>
+            <li><time datetime="2026-10-26">10-26</time><span class="t"><a href="/#faq">FAQ 补充“删帖后如何核验”一问</a></span><span class="src">问答页 · 待核 2 条</span></li>
+          </ul>
+        </section>
+
+        <!-- 分类入口 -->
+        <section class="block" id="channels">
+          <div class="block-head"><h2>频道分类：按素材类型找条目</h2><span class="sub">8 个常设频道</span></div>
+          <p class="block-desc">频道按“素材长什么样”划分，不按事件热度。每个频道下列出该类型常见误传方式，进入后再按日期与账号筛选。</p>
+          <div class="cat-grid">
+            <a class="cat-a" href="/#picks"><b>现场视频核验</b><span>自拍视频、定位、连续时间戳。常见问题是旧视频配新日期。</span></a>
+            <a class="cat-a" href="/#picks"><b>推特截图溯源</b><span>界面语言、用户名、发帖时间三要素齐全才可回查。</span></a>
+            <a class="cat-a" href="/#news"><b>官方文件对照</b><span>统计局、财政部、地方政府公告，注意脚注与修订版。</span></a>
+            <a class="cat-a" href="/#analysis"><b>时间线梳理</b><span>多段素材按烟柱、天气、车牌排出先后顺序。</span></a>
+            <a class="cat-a" href="/#tiers"><b>账号可信度分层</b><span>按原创比例分三层，编译号与搬运号单独标注。</span></a>
+            <a class="cat-a" href="/#guide"><b>删帖与存档</b><span>账号不可见后的转推残留、Wayback 与 archive.today 快照。</span></a>
+            <a class="cat-a" href="/#faq"><b>术语与规则</b><span>“黑料”“爆料”“编译”在传播链里各自指什么。</span></a>
+            <a class="cat-a" href="/#comments"><b>读者投稿</b><span>读者提供的截图与线索，标注“未核验”后公开展示。</span></a>
+          </div>
+        </section>
+
+        <!-- 深度解析 -->
+        <section class="block" id="analysis">
+          <div class="analysis">
+            <h2>深度解析：推特爆料的可核验程度，取决于三处断点</h2>
+            <p class="lead">以下判断都可以被反驳，前提是拿出更早的原帖、更完整的视频或官方表格的原件。三个断点分别出现在拍摄、转述和删帖之后。</p>
+
+            <h3>断点一：拍摄时间与上传时间之间，常隔着数周</h3>
+            <p>10 月 26 日莫斯科州仓库火灾，传播最广的一段视频由 @moscow_now_ru 在当晚 23:12 发布，播放量到 11 月 7 日已超过 180 万。同一场火灾另有两段视频，分别由 @dg_sergey 和 @fire_watch_msk 在 21:40 与 22:05 上传。按消防车到场顺序和烟柱倾倒方向判断，@dg_sergey 那段才是最早画面，而它只有 4.2 万播放。</p>
+            <p>一段视频被大量转发，说明它符合转发者对事件的想象，不说明它更接近现场。把三段视频逐帧对照，能看到同一辆消防车的车牌尾号在 21:40 段与 22:05 段一致，23:12 段里换成了另一辆车，说明后者是后期补拍，不是同一现场的首发镜头。</p>
+
+            <div class="verify-box">
+              <h4>可核对的结构：一条视频的四项检查</h4>
+              <ol>
+                <li>上传时间是否为推特界面原始时间，而非截图里的中文日期。</li>
+                <li>画面内是否有可定位的路牌、店招或车牌制式。</li>
+                <li>天气、植被、衣着是否与标注日期所在地的气候记录一致。</li>
+                <li>是否存在同一账号的连续更新，前后画面能否接上。</li>
+              </ol>
+            </div>
+
+            <h3>断点二：转述时删掉的限定语，比错误更常见</h3>
+            <p>10 月 30 日，Telegram 频道“Северный ветер”发布一段约 600 字的描述，提到某地动员办公室外排队。原文有两处限定：“据当地居民称”“尚未得到办公室确认”。当天下午推特账号 @rus_events_ru 摘译成 180 词，两处限定语都被删去，只保留“排队”“数十人”等数字。</p>
+            <p>这类删减不构成造假，但改变了句子的证据等级。原文是转述加未确认，摘译后读起来像已确认的事实。中文二次截图又裁掉了 @ 用户名，到读者手上时，既不知道谁说的，也不知道说的是转述。</p>
+
+            <table class="cmp">
+              <thead>
+                <tr><th>层级</th><th>文本特征</th><th>可核对程度</th><th>建议用法</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>原帖</td><td>含账号、时间、完整段落</td><td>高，可回查</td><td>作为主要依据</td></tr>
+                <tr><td>编译摘译</td><td>删限定语，压缩数字</td><td>中，需找原文</td><td>作为线索</td></tr>
+                <tr><td>中文截图</td><td>裁界面、无用户名</td><td>低</td><td>只当传闻</td></tr>
+              </tbody>
+            </table>
+
+            <h3>断点三：账号不可见之后，证据只剩碎片</h3>
+            <p>@rus_events_ru 在 10 月 30 日 14:20 至 23:40 之间连续发布 11 条，内容涉及动员通知、地方预算与一段夜间视频。11 月 1 日账号页面显示不可见。第三方存档站保存了其中 7 条的正文与配图，另 4 条只在被转发时留下文字片段。</p>
+            <p>对剩下 4 条，任何引用都只能写成“转推中保留的片段称……”。把片段当成完整原帖引用，是这段时间最容易犯的错。也有一种相反的做法：因为没有原帖就断定内容为假。这两者都跳过了核验，只是方向不同。</p>
+
+            <ul class="tl">
+              <li><b>10-30 14:20</b><span>首条发布，内容为征兵通知单扫描件，配文 42 字。</span></li>
+              <li><b>10-30 19:05</b><span>发布夜间视频，标注地点为莫斯科州，画面无路牌。</span></li>
+              <li><b>10-30 23:40</b><span>末条发布，随后 6 小时无更新。</span></li>
+              <li><b>11-01 09:00</b><span>账号页显示不可见，存档开始。</span></li>
+              <li><b>11-08</b><span>存档 7 条正文完整，4 条仅存转推片段。</span></li>
+            </ul>
+
+            <div class="pullquote">
+              <p>一条爆料在推特上获得两万转推，只能证明它在两万人那里通过了直觉检验。要判断它是否成立，得回到拍摄者、原始时间和转述链条这三处。</p>
+              <cite>—— 对 10 月 26 日至 11 月 7 日六条高传播条目的共同观察</cite>
+            </div>
+
+            <h3>还有一类情况：事实与推测可以拆开写</h3>
+            <p>10 月 31 日财政部公布预算表格，国防相关支出一栏被多家账号截图转发，配文称“同比增长 34%”。表格原件确实录入了这一数字，但脚注写明该栏包含往年结转项目，占 18%。把脚注去掉后，34% 仍能在表格里找到，只是它的含义变了。</p>
+            <p>遇到这类数字，可拆成三行核对：表格原值是多少、脚注怎么定义、与谁相比。三项都写清楚，争议通常会缩小到统计口径本身，而不是整条爆料真伪。</p>
+          </div>
+        </section>
+
+        <!-- 体验指南 -->
+        <section class="block" id="guide">
+          <div class="block-head"><h2>体验指南：六步走完一条爆料的核验</h2><span class="sub">按顺序执行，前两步决定后面还值不值得做</span></div>
+          <p class="block-desc">这套流程适用于带截图或短视频的推特爆料。纯文字帖基本只能看作者历史记录，不在此列。每一步都给出常见卡住的地方。</p>
+          <div class="steps">
+            <div class="step"><b>先看有没有原始链接</b><p>截图里保留 @ 用户名和发帖日期，才有回查价值。缺用户名时，先问发图者要链接；要不到，就按匿名转述处理。</p></div>
+            <div class="step"><b>用高级搜索定位原帖</b><p>推特搜索框输入 from:账号 since:2026-10-01 until:2026-11-08，再叠加关键词。原帖已删时，搜索引用过它的转推，常能留下文字片段。</p></div>
+            <div class="step"><b>抽帧做反向图搜</b><p>视频取第 0 秒、5 秒、10 秒三帧，分别反搜。最早出现时间若早于标注日期，基本可判定旧素材。植被与衣着是常见的破绽。</p></div>
+            <div class="step"><b>找定位与天气记录</b><p>路牌、店招、车牌制式能缩小到城市。再对照当地气象记录：2026 年 10 月中旬莫斯科最低温已到 2℃，短袖画面与日期不符。</p></div>
+            <div class="step"><b>对照官方或机构文件</b><p>涉及数字时找原始表格，重点看脚注与修订说明。统计局与财政部的 PDF 常带版本号，中文截图一般只保留汇总行。</p></div>
+            <div class="step"><b>把结论写成三行</b><p>第一行写能确认的事实，第二行写尚存的回应或反证，第三行写推测及其依据。三行分开，读者能自己判断该信到哪一层。</p></div>
+          </div>
+        </section>
+
+        <!-- 可信度分层 -->
+        <section class="block" id="tiers">
+          <div class="block-head"><h2>可信度分层：三类推特账号的判别标准</h2><span class="sub">样本来自 2026-10-26 至 11-08 的 63 条帖子</span></div>
+          <p class="block-desc">分层看的是发布习惯，不是立场。同一账号在不同事件上可能落在不同层，所以每条帖子单独判，不给人贴永久标签。</p>
+          <div class="tier">
+            <div class="tier-row t1"><div class="lv">第一层<br>原创现场</div><div class="body"><b>自拍视频 + 定位 + 连续时间戳</b><p>典型如 @dg_sergey，10 月 26 日 21:40 至 22:30 连发 5 条，画面可接续，含路牌。此类账号更新慢，单条传播量通常不高，是回查其他账号的基准。</p></div></div>
+            <div class="tier-row t2"><div class="lv">第二层<br>编译转述</div><div class="body"><b>标注来源但常省略日期</b><p>典型如 @rus_events_ru，10 月 30 日 11 条中 7 条写了“据 Telegram 频道”，均未标原发布时间。可作线索，引用前须找原文。</p></div></div>
+            <div class="tier-row t3"><div class="lv">第三层<br>截图配文</div><div class="body"><b>只有截图与判断，无出处</b><p>中文圈常见形态。10 月 28 日至 11 月 5 日抽查 18 条，能回查到原帖的 4 条，其余 14 条无用户名或日期。只能当传闻记录。</p></div></div>
+          </div>
+        </section>
+
+        <!-- 对照面板 -->
+        <section class="block" id="compare">
+          <div class="block-head"><h2>说法对照：同一个事件的不同版本</h2><span class="sub">以 10 月 30 日排队事件为例</span></div>
+          <p class="block-desc">同一件事，Telegram 原频道、推特摘译、中文截图三处说法在限定语和数字上各不相同。下面把三者并排放，方便看出删减发生在哪一步。</p>
+          <div class="panel2">
+            <div class="panel solid">
+              <h3>Telegram 原频道版本</h3>
+              <ul>
+                <li>“据当地居民称，办公室外约有数十人排队。”</li>
+                <li>“尚未得到办公室方面确认。”</li>
+                <li>发布时间 10 月 30 日 11:26，含两张远景照片。</li>
+              </ul>
+            </div>
+            <div class="panel soft">
+              <h3>推特摘译与中文截图版本</h3>
+              <ul>
+                <li>“动员办公室外排起长队，数十人等待。”</li>
+                <li>两处限定语均未出现。</li>
+                <li>中文截图裁去 @ 用户名与发布时间，只留正文。</li>
+              </ul>
+            </div>
+          </div>
+          <p style="margin-top:14px;font-size:14px">差异集中在两处：转述标记“据当地居民称”被删，确认状态“尚未确认”被删。数字“数十人”三处一致，未发现放大。也就是说，这条爆料的问题不在数字，而在证据等级被抬高了一层。</p>
+        </section>
+
+        <!-- FAQ -->
+        <section class="block" id="faq">
+          <div class="block-head"><h2>常见问题：围绕截图、旧视频与删帖</h2><span class="sub">5 问</span></div>
+          <details class="faq"><summary>推特黑料截图没有原始链接怎么判断来源？</summary><div class="ans"><p>先看截图中是否保留 @ 用户名、发帖日期和界面语言。三者缺失的截图只能当成匿名转述，不能指向具体账号。可用推特高级搜索 from:账号 since:日期 until:日期 回查，若原帖已删除，第三方存档站或引用过该帖的媒体页面是次优证据。</p></div></details>
+          <details class="faq"><summary>俄罗斯官方通报与推特爆料冲突时信哪个？</summary><div class="ans"><p>分两类看。涉及伤亡、动员、预算等可统计事项，俄联邦统计局、财政部与地方政府的公开文件可交叉核对。涉及现场画面，先确认拍摄地点与时间，再看是否有同角度视频。推特爆料在官方口径之前出现并不等于更真实，常常只是转述更快。</p></div></details>
+          <details class="faq"><summary>旧视频被说成 2026 年新事件怎么识别？</summary><div class="ans"><p>抽帧后用反向图搜，查看最早出现时间。再查视频中出现的车牌制式、店铺招牌文字、天气与季节。2026 年 10 月下旬莫斯科已有积雪记录，若所谓 10 月中旬视频里行道树全绿且行人穿短袖，时间标注大概率有误。</p></div></details>
+          <details class="faq"><summary>吃瓜推特黑料俄罗斯里的账号可信度怎么分层？</summary><div class="ans"><p>按原始素材比例分三层。第一层发布自拍视频、带定位和连续时间戳；第二层为编译型账号，标注来源但常省略日期；第三层只发截图与配文，不给出处。讨论具体事件时优先找第一层，第二层可作为线索，第三层只当传闻。</p></div></details>
+          <details class="faq"><summary>被指黑料的账号删帖后还能核验吗？</summary><div class="ans"><p>能，但证据等级下降。推特删除帖会在引用它的转推里留下文字片段，Wayback Machine 与 archive.today 可能保存快照。若只有二手截图且无可对照的时间戳，应标注为无法验证，而不是直接采信。</p></div></details>
+        </section>
+
+        <!-- 用户评论 -->
+        <section class="block" id="comments">
+          <div class="block-head"><h2>读者评论：六条带具体指向的反馈</h2><span class="sub">含批评与中性意见，均指向具体条目</span></div>
+          <p class="block-desc">评论按提交时间排列，保留口语与不同语气。指向具体条目的评论单独标注，便于对照回查。</p>
+          <div class="cmt-grid">
+            <article class="cmt">
+              <div class="who"><span class="av">柯</span><b>柯尔克孜的雪</b><span class="meta">11-08 09:12</span></div>
+              <p>仓库火灾那三段视频的排序挺服气，消防车车牌尾号这个细节自己以前完全没注意。</p>
+              <span class="on-which">指向：莫斯科州仓库火灾</span>
+            </article>
+            <article class="cmt">
+              <div class="who"><span class="av">瓦</span><b>瓦西里耶夫卡</b><span class="meta">11-07 22:40</span></div>
+              <p>征兵通知单那篇说旧版仍在流通，可我在两个地方频道看到的都是新版式，不知道是不是地区差异，希望补一句说明。</p>
+              <span class="on-which">指向：征兵通知单两版式</span>
+            </article>
+            <article class="cmt">
+              <div class="who"><span class="av">Л</span><b>Лена_1987</b><span class="meta">11-07 15:03</span></div>
+              <p>排队视频判成旧素材这事，中文圈还在传，截图都糊成那样了也没人问一句哪年拍的。</p>
+              <span class="on-which">指向：圣彼得堡排队视频</span>
+            </article>
+            <article class="cmt">
+              <div class="who"><span class="av">数</span><b>数字搬运工</b><span class="meta">11-06 18:55</span></div>
+              <p>预算表格脚注那段写得清楚，但“占 18%”最好直接给出表格页码，现在只能自己回去翻 PDF。</p>
+              <span class="on-which">指向：国防预算表格</span>
+            </article>
+            <article class="cmt">
+              <div class="who"><span class="av">老</span><b>老周不熬夜</b><span class="meta">11-05 11:20</span></div>
+              <p>可信度分层有点武断，编译号里也有认真标日期的，一刀切三层不太公平。</p>
+              <span class="on-which">指向：账号可信度分层</span>
+            </article>
+            <article class="cmt">
+              <div class="who"><span class="av">阿</span><b>阿穆尔河畔</b><span class="meta">11-04 20:08</span></div>
+              <p>@rus_events_ru 那 4 条只剩片段，正文里写“转推中保留的片段称”，这个措辞是稳的，比直接说“已证实”好太多。</p>
+              <span class="on-which">指向：@rus_events_ru 删帖存档</span>
+            </article>
+          </div>
+        </section>
+
+        <!-- 相关资讯 -->
+        <section class="block" id="news">
+          <div class="block-head"><h2>相关资讯：六条规则与记录变动</h2><span class="sub">官方文件与平台规则</span></div>
+          <div class="news-list">
+            <article class="news"><div><h3>推特对含俄语标签的帖子调整推荐权重</h3><p>10 月底起，部分含俄语话题标签的帖子在非关注时间线中展示次数下降。平台未公布具体比例，创作者端可见的数据为单帖曝光减少。</p></div><span class="meta">10-29 · 平台规则</span></article>
+            <article class="news"><div><h3>俄联邦统计局发布 9 月工业生产修订数据</h3><p>修订版将 9 月同比数据上调 0.4 个百分点，脚注注明统计口径包含新并入企业。多家账号引用未修订版，数字与现行版本不一致。</p></div><span class="meta">11-02 · 官方文件</span></article>
+            <article class="news"><div><h3>archive.today 对推特快照的保存延迟</h3><p>10 月 30 日至 11 月 1 日期间，该站对部分推特链接的保存出现数小时延迟，导致 @rus_events_ru 两条帖子的快照时间晚于原帖。</p></div><span class="meta">11-01 · 存档记录</span></article>
+            <article class="news"><div><h3>Telegram 频道“Северный ветер”公开修订说明</h3><p>该频道 11 月 2 日补发说明，承认 10 月 30 日排队描述中“数十人”为约数，实际难以统计，原文未改，仅在置顶中补充。</p></div><span class="meta">11-02 · 原文回应</span></article>
+            <article class="news"><div><h3>莫斯科州消防部门公布仓库火灾初步通报</h3><p>通报时间为 10 月 27 日 08:15，列明过火面积与出动车辆数，未提及人员伤亡。与推特流传的“数十人受伤”说法不一致。</p></div><span class="meta">10-27 · 官方通报</span></article>
+            <article class="news"><div><h3>部分地方政府网站更新动员通知模板下载页</h3><p>10 月 31 日，两个州的网站将通知单模板从旧版换为新版，旧版下载链接仍可访问。这解释了新旧版式同时流通的现象。</p></div><span class="meta">10-31 · 网页变动</span></article>
+          </div>
+        </section>
+
+        <!-- 相关推荐 -->
+        <section class="block" id="related">
+          <div class="block-head"><h2>相关推荐：按长尾需求跳转</h2><span class="sub">标签索引</span></div>
+          <p class="block-desc">按你可能的下一步需求排列。要查时间顺序点第一条，要看账号历史点第二条，要自己动手核验点后面几条。</p>
+          <div class="tagrow" style="gap:10px">
+            <a class="chip" href="/#analysis">推特视频时间戳怎么查</a>
+            <a class="chip" href="/#tiers">俄语编译账号怎么分辨</a>
+            <a class="chip" href="/#guide">推特截图反向图搜步骤</a>
+            <a class="chip" href="/#picks">俄罗斯征兵通知单版式差异</a>
+            <a class="chip" href="/#faq">删帖后原帖快照哪里找</a>
+            <a class="chip" href="/#updates">本周新增核验条目</a>
+            <a class="chip" href="/#news">财政部预算表格脚注</a>
+            <a class="chip" href="/#compare">排队事件原文与摘译对照</a>
+            <a class="chip" href="/#comments">读者投稿线索</a>
+            <a class="chip" href="/#channels">官方文件对照频道</a>
+          </div>
+        </section>
+
+        <!-- 补充板块：时间线 -->
+        <section class="block" id="timeline">
+          <div class="block-head"><h2>事件时间线：10 月 26 日至 11 月 8 日的公开记录</h2><span class="sub">只列可回查节点</span></div>
+          <p class="block-desc">这条时间线只收有明确发布时间或文件日期的节点，推测性内容不进入。括号内为来源类型。</p>
+          <ul class="tl">
+            <li><b>10-26 21:40</b><span>@dg_sergey 发布莫斯科州仓库火灾首段视频，画面含消防车车牌尾号。（推特原帖）</span></li>
+            <li><b>10-27 08:15</b><span>莫斯科州消防部门发布初步通报，列明过火面积，未提伤亡。（官方通报）</span></li>
+            <li><b>10-30 11:26</b><span>Telegram 频道“Северный ветер”发布排队描述，含两处限定语。（原频道）</span></li>
+            <li><b>10-30 14:20</b><span>@rus_events_ru 摘译该描述，限定语被删。（推特摘译）</span></li>
+            <li><b>10-30 23:40</b><span>@rus_events_ru 发布当日末条。（推特原帖）</span></li>
+            <li><b>10-31</b><span>财政部公布预算表格，国防相关栏含往年结转脚注。（官方 PDF）</span></li>
+            <li><b>11-01 09:00</b><span>@rus_events_ru 账号页不可见，存档开始。（账号页）</span></li>
+            <li><b>11-02</b><span>“Северный ветер”补发数字说明，原文未改。（频道置顶）</span></li>
+            <li><b>11-06</b><span>圣彼得堡排队视频经反向图搜判定为旧素材。（核验记录）</span></li>
+            <li><b>11-08</b><span>存档 7 条正文完整、4 条仅存转推片段，补录完成。（存档记录）</span></li>
+          </ul>
+        </section>
+
+      </div>
+
+      <!-- 侧栏 -->
+      <aside class="side-col" aria-label="侧栏导航与速览">
+        <nav class="side-card side-nav" id="sideNav" aria-label="栏目快速定位">
+          <h3>栏目定位</h3>
+          <a href="/#overview">领域概览</a>
+          <a href="/#picks">精选核验</a>
+          <a href="/#updates">最新更新</a>
+          <a href="/#channels">频道分类</a>
+          <a href="/#analysis">深度解析</a>
+          <a href="/#guide">体验指南</a>
+          <a href="/#tiers">可信度分层</a>
+          <a href="/#compare">说法对照</a>
+          <a href="/#faq">常见问题</a>
+          <a href="/#timeline">事件时间线</a>
+        </nav>
+        <div class="side-card">
+          <h3>本周高频误传</h3>
+          <ol class="rank-list">
+            <li><a href="/#picks">圣彼得堡排队视频被标为 10 月中旬</a></li>
+            <li><a href="/#picks">预算数字截图省略结转脚注</a></li>
+            <li><a href="/#compare">排队描述删去“尚未确认”</a></li>
+            <li><a href="/#picks">@rus_events_ru 片段被当完整原帖</a></li>
+            <li><a href="/#news">工业数据引用未修订版</a></li>
+          </ol>
+        </div>
+        <div class="side-card">
+          <h3>核验速记</h3>
+          <ul class="mini-list">
+            <li><b>截图三要素</b><span class="meta">@ 用户名 · 发帖日期 · 界面语言</span></li>
+            <li><b>旧视频破绽</b><span class="meta">植被 · 衣着 · 车牌制式 · 天气</span></li>
+            <li><b>数字看脚注</b><span class="meta">统计口径 · 调整项 · 修订版本</span></li>
+            <li><b>删帖找残留</b><span class="meta">转推片段 · 存档快照 · 媒体引用</span></li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </div>
+</main>
+
+<footer class="site">
+  <div class="wrap foot-top">
+    <div>
+      <div class="foot-brand">
+        <svg viewBox="0 0 64 64" role="img" aria-hidden="true">
+          <rect width="64" height="64" rx="14" fill="#e2b23c"/>
+          <circle cx="24" cy="25" r="9" fill="none" stroke="#1f2a44" stroke-width="4"/>
+          <path d="M33 33l14 15" stroke="#1f2a44" stroke-width="5" stroke-linecap="round"/>
+          <path d="M18 47h20" stroke="#c8503f" stroke-width="4" stroke-linecap="round"/>
+        </svg>
+        <div><strong>吃瓜推特黑料俄罗斯</strong><span>SOURCE CHECK</span></div>
+      </div>
+      <p>把推特上关于俄罗斯的截图、短视频和文字爆料按来源分段，标出哪一段能核对、哪一段只是转述。只做拆解与索引，不替读者下最终结论。</p>
+    </div>
+    <div class="foot-col">
+      <h4>核验栏目</h4>
+      <ul>
+        <li><a href="/#overview">领域概览</a></li>
+        <li><a href="/#picks">精选核验</a></li>
+        <li><a href="/#updates">最新更新</a></li>
+        <li><a href="/#analysis">深度解析</a></li>
+      </ul>
+    </div>
+    <div class="foot-col">
+      <h4>工具与流程</h4>
+      <ul>
+        <li><a href="/#guide">六步核验流程</a></li>
+        <li><a href="/#tiers">账号可信度分层</a></li>
+        <li><a href="/#compare">说法对照表</a></li>
+        <li><a href="/#faq">常见问题</a></li>
+      </ul>
+    </div>
+    <div class="foot-col">
+      <h4>频道入口</h4>
+      <ul>
+        <li><a href="/#channels">现场视频核验</a></li>
+        <li><a href="/#channels">推特截图溯源</a></li>
+        <li><a href="/#channels">删帖与存档</a></li>
+        <li><a href="/#news">相关资讯</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="foot-note">
+    <div class="wrap">
+      <span>页面内条目、账号与播放量为示例数据，用于说明核验方法，不构成对任何真实个人或机构的指控。</span>
+      <span class="sep">|</span>
+      <span class="upd">页尾更新 2026-11-08，对应最新更新第 1 条与时间线末条</span>
+      <span class="sep">|</span>
+      <span>© 2026 吃瓜推特黑料俄罗斯 · 内容索引站</span>
+    </div>
+  </div>
+</footer>
+
+<button class="to-top" id="toTop" type="button" aria-label="回到页面顶部">↑</button>
+
+<script>
+(function(){
+  var menuBtn = document.getElementById('menuBtn');
+  var nav = document.getElementById('mainnav');
+  menuBtn.addEventListener('click', function(){
+    var open = nav.classList.toggle('open');
+    menuBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  nav.addEventListener('click', function(e){
+    if(e.target.tagName === 'A' && window.matchMedia('(max-width:720px)').matches){
+      nav.classList.remove('open');
+      menuBtn.setAttribute('aria-expanded','false');
+    }
+  });
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape' && nav.classList.contains('open')){
+      nav.classList.remove('open');
+      menuBtn.setAttribute('aria-expanded','false');
+      menuBtn.focus();
+    }
+  });
+
+  var toTop = document.getElementById('toTop');
+  window.addEventListener('scroll', function(){
+    if(window.scrollY > 500){ toTop.classList.add('show'); }
+    else { toTop.classList.remove('show'); }
+  }, {passive:true});
+  toTop.addEventListener('click', function(){
+    window.scrollTo({top:0, behavior:'smooth'});
+  });
+
+  var sideLinks = Array.prototype.slice.call(document.querySelectorAll('#sideNav a'));
+  var sections = sideLinks.map(function(a){
+    return document.querySelector(a.getAttribute('href').replace('/#','#'));
+  });
+  if('IntersectionObserver' in window){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if(en.isIntersecting){
+          var id = en.target.id;
+          sideLinks.forEach(function(a){
+            a.classList.toggle('active', a.getAttribute('href') === '/#' + id);
+          });
+        }
+      });
+    }, {rootMargin:'-100px 0px -60% 0px', threshold:0});
+    sections.forEach(function(s){ if(s) io.observe(s); });
+  }
+
+  var q = document.getElementById('q');
+  var qBtn = document.getElementById('qBtn');
+  var note = document.getElementById('searchNote');
+  function findInPage(){
+    var term = (q.value || '').trim();
+    if(!term){
+      note.textContent = '请输入账号名、日期或条目关键词，例如“11-06”“仓库火灾”。';
+      note.classList.add('show');
+      return;
+    }
+    var texts = Array.prototype.slice.call(document.querySelectorAll('.main-col .t, .pick-card h3, .ov-item h3, .cat-a b, .rank-list a, .mini-list b'));
+    var hit = null;
+    for(var i=0;i<texts.length;i++){
+      if(texts[i].textContent.indexOf(term) !== -1){ hit = texts[i]; break; }
+    }
+    if(hit){
+      var target = hit.closest('section') || hit.closest('.side-card') || hit;
+      target.scrollIntoView({behavior:'smooth', block:'start'});
+      hit.style.transition = 'background .3s';
+      hit.style.background = '#f6eeda';
+      setTimeout(function(){ hit.style.background = ''; }, 1600);
+      note.textContent = '已定位到包含“' + term + '”的条目。';
+      note.classList.remove('show');
+    } else {
+      note.textContent = '没有找到包含“' + term + '”的条目。可换账号名、日期（如 10-30）或事件词（如 仓库火灾）再试。';
+      note.classList.add('show');
+    }
+  }
+  qBtn.addEventListener('click', findInPage);
+  q.addEventListener('keydown', function(e){
+    if(e.key === 'Enter'){ e.preventDefault(); findInPage(); }
+  });
+})();
+</script>
+</body>
+                                                                           </html>
