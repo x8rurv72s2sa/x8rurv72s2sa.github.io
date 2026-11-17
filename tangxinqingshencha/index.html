@@ -1,0 +1,945 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>糖心情深叉喔-同人设定与创作索引</title>
+<meta name="description" content="糖心情深叉喔是同人创作社群的设定与作品索引，收录角色关系梳理、分章长篇更新、短篇合集、设定考据与读者讨论。2026年11月第2周的更新清单、可核对的时间线与体验指南一并整理，方便查找具体片段与章节。">
+<meta name="keywords" content="糖心情深叉喔">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23f6d7e0'/%3E%3Cpath d='M32 12l7 13 15 2-11 11 3 15-14-7-14 7 3-15-11-11 15-2z' fill='%23c2456b'/%3E%3C/svg%3E">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","name":"糖心情深叉喔","description":"同人创作社群的设定与作品索引，收录角色关系、分章更新、考据与读者讨论。","inLanguage":"zh-CN"}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"糖心情深叉喔的分章阅读顺序怎么排？","acceptedAnswer":{"@type":"Answer","text":"正文按《春汛卷》《夏夜卷》《秋雾卷》顺序推进，番外《叉喔的十七封信》可独立阅读。第2章与第7章存在双视角重叠，先读标注“主线”的版本，再补番外，能避免时间线断裂。"}},
+{"@type":"Question","name":"角色关系图的更新依据是什么？","acceptedAnswer":{"@type":"Answer","text":"关系图依据2026年10月30日作者在合集《甜度校准》中的置顶说明，两条旧支线被降为“未确认设定”，主线上新增“共写”标记。每条连线均标注首次出处章节。"}},
+{"@type":"Question","name":"同人短篇合集《夜班糖铺》收录了几篇？","acceptedAnswer":{"@type":"Answer","text":"共收录12篇，其中8篇为首次公开，4篇为2025年旧作修订。修订点集中在对话语气与两处时间标记，原版保留在合集的“旧稿对照”附页。"}},
+{"@type":"Question","name":"读者投稿的段子会署名吗？","acceptedAnswer":{"@type":"Answer","text":"会。投稿一经选用，卡片右上角标注投稿人昵称与提交日期，编辑部只做错字与标点整理；改写超过三处会退稿并说明原因。"}},
+{"@type":"Question","name":"设定考据里的“叉”指什么？","acceptedAnswer":{"@type":"Answer","text":"“叉”指叙事中两条时间线在第七节产生的分岔点，社区内部称之为“叉点”。它并非人物名，也不是标题错字，考据页有专门的分岔对照表。"}}
+]}
+</script>
+<style>
+:root{
+  --rose:#c2456b;
+  --rose-deep:#8e2f4e;
+  --rose-soft:#f6d7e0;
+  --blush:#fdf1f4;
+  --ink:#2c2530;
+  --ink-2:#5c5260;
+  --ink-3:#8b8090;
+  --line:#e9d7dd;
+  --paper:#fffdfd;
+  --cream:#fdf8f2;
+  --gold:#b98a3c;
+  --radius:12px;
+  --radius-s:8px;
+  --shadow:0 2px 10px rgba(142,47,78,.08);
+  --shadow-l:0 10px 30px rgba(142,47,78,.12);
+  --space:clamp(16px,3vw,32px);
+  --font:"Noto Serif SC","Songti SC","SimSun",Georgia,"Microsoft YaHei",sans-serif;
+  --font-sans:"Noto Sans SC","PingFang SC","Microsoft YaHei",system-ui,sans-serif;
+  --announce-h:38px;
+  --head-h:62px;
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;scroll-padding-top:calc(var(--announce-h) + var(--head-h) + 12px);}
+body{margin:0;font-family:var(--font);color:var(--ink);background:var(--paper);line-height:1.85;font-size:16px;-webkit-text-size-adjust:100%;overflow-x:hidden;}
+img{max-width:100%;display:block;}
+a{color:var(--rose-deep);text-decoration:none;}
+a:hover{text-decoration:underline;}
+h1,h2,h3,h4{font-family:var(--font);line-height:1.4;margin:0;}
+ul,ol{margin:0;padding:0;list-style:none;}
+button{font-family:inherit;}
+:focus-visible{outline:3px solid var(--rose);outline-offset:2px;border-radius:4px;}
+
+/* 公告条 + 页头吸顶 */
+.sticky-shell{position:sticky;top:0;z-index:60;}
+.announce{background:linear-gradient(90deg,var(--rose-deep),var(--rose));color:#fff;font-size:13.5px;font-family:var(--font-sans);height:var(--announce-h);display:flex;align-items:center;}
+.announce .wrap{display:flex;align-items:center;gap:10px;width:100%;overflow:hidden;}
+.announce .tag{background:rgba(255,255,255,.2);border:1px solid rgba(255,255,255,.45);padding:1px 8px;border-radius:20px;font-size:12px;flex:none;letter-spacing:.05em;}
+.announce p{margin:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.announce a{color:#fff;text-decoration:underline;text-underline-offset:3px;}
+
+.wrap{width:min(1180px,100% - 2*var(--space));margin-inline:auto;}
+.site-head{background:rgba(255,253,253,.96);border-bottom:1px solid var(--line);backdrop-filter:blur(6px);height:var(--head-h);}
+.head-inner{display:flex;align-items:center;gap:18px;height:var(--head-h);}
+.brand{display:flex;align-items:center;gap:10px;flex:none;}
+.brand svg{width:34px;height:34px;flex:none;}
+.brand-name{font-size:19px;font-weight:700;letter-spacing:.06em;color:var(--rose-deep);white-space:nowrap;}
+.head-nav{display:flex;gap:4px;margin-left:8px;flex:1;overflow:hidden;}
+.head-nav a{font-family:var(--font-sans);font-size:14px;color:var(--ink-2);padding:6px 10px;border-radius:20px;white-space:nowrap;}
+.head-nav a:hover,.head-nav a:focus-visible{background:var(--rose-soft);color:var(--rose-deep);text-decoration:none;}
+.head-tools{display:flex;align-items:center;gap:8px;flex:none;}
+.search-box{display:flex;align-items:center;border:1px solid var(--line);border-radius:20px;background:var(--blush);padding:2px 4px 2px 12px;}
+.search-box input{border:0;background:transparent;font-size:13.5px;font-family:var(--font-sans);width:130px;padding:5px 0;color:var(--ink);}
+.search-box input:focus{outline:none;}
+.search-box button{border:0;background:var(--rose);color:#fff;font-size:13px;padding:5px 12px;border-radius:16px;cursor:pointer;font-family:var(--font-sans);}
+.menu-btn{display:none;border:1px solid var(--line);background:var(--blush);border-radius:8px;padding:6px 9px;cursor:pointer;color:var(--rose-deep);}
+.menu-btn svg{display:block;width:20px;height:20px;}
+.search-msg{display:none;font-size:12.5px;color:var(--ink-3);font-family:var(--font-sans);padding:4px 0 0;grid-column:1/-1;}
+
+/* 首屏 */
+.hero{position:relative;overflow:hidden;background:linear-gradient(160deg,#fff6f8 0%,#fdf1f4 45%,#fbeaf0 100%);border-bottom:1px solid var(--line);}
+.hero::before{content:"";position:absolute;right:-120px;top:-90px;width:420px;height:420px;border-radius:50%;background:radial-gradient(circle at 35% 35%,rgba(194,69,107,.14),transparent 65%);pointer-events:none;}
+.hero-inner{position:relative;display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(20px,4vw,48px);align-items:center;padding:clamp(32px,5vw,62px) 0 clamp(30px,4vw,52px);}
+.hero-kicker{display:inline-flex;align-items:center;gap:8px;font-family:var(--font-sans);font-size:12.5px;letter-spacing:.18em;color:var(--rose);text-transform:uppercase;margin-bottom:14px;}
+.hero-kicker::before{content:"";width:26px;height:1.5px;background:var(--rose);}
+.hero h1{font-size:clamp(30px,5vw,46px);letter-spacing:.04em;color:var(--ink);margin-bottom:14px;}
+.hero h1 em{font-style:normal;color:var(--rose-deep);}
+.hero-lead{font-size:16.5px;color:var(--ink-2);max-width:34em;margin:0 0 22px;}
+.hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:26px;}
+.btn{display:inline-flex;align-items:center;gap:8px;font-family:var(--font-sans);font-size:14.5px;padding:10px 22px;border-radius:26px;border:1px solid transparent;transition:transform .18s ease,box-shadow .18s ease;}
+.btn:hover{text-decoration:none;transform:translateY(-2px);box-shadow:var(--shadow-l);}
+.btn-primary{background:var(--rose);color:#fff;}
+.btn-ghost{border-color:var(--rose);color:var(--rose-deep);background:rgba(255,255,255,.6);}
+.hero-stats{display:flex;flex-wrap:wrap;gap:8px 26px;font-family:var(--font-sans);}
+.hero-stats div{font-size:13px;color:var(--ink-3);}
+.hero-stats b{display:block;font-family:var(--font);font-size:22px;color:var(--rose-deep);line-height:1.2;}
+.hero-art{position:relative;min-height:280px;display:flex;align-items:center;justify-content:center;}
+.hero-art svg{width:100%;max-width:380px;height:auto;filter:drop-shadow(0 12px 26px rgba(142,47,78,.14));}
+.hero-art .caption{position:absolute;bottom:0;right:4px;font-family:var(--font-sans);font-size:11.5px;color:var(--ink-3);background:rgba(255,255,255,.75);padding:2px 10px;border-radius:12px;}
+
+/* 主内容双栏 */
+.layout{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:clamp(20px,3vw,40px);padding:clamp(28px,4vw,48px) 0 60px;align-items:start;}
+main{min-width:0;}
+section[id]{scroll-margin-top:calc(var(--announce-h) + var(--head-h) + 16px);}
+.block{margin-bottom:clamp(34px,4.5vw,54px);}
+.block-head{display:flex;align-items:baseline;gap:14px;margin-bottom:18px;border-bottom:1px solid var(--line);padding-bottom:10px;flex-wrap:wrap;}
+.block-head h2{font-size:clamp(20px,2.4vw,25px);color:var(--ink);letter-spacing:.03em;}
+.block-head h2::before{content:"◇";color:var(--rose);font-size:.7em;margin-right:9px;vertical-align:2px;}
+.block-head .sub{font-family:var(--font-sans);font-size:12.5px;color:var(--ink-3);letter-spacing:.05em;}
+.block-head .more{margin-left:auto;font-family:var(--font-sans);font-size:13px;}
+
+/* 概览 */
+.overview{background:var(--cream);border:1px solid var(--line);border-radius:var(--radius);padding:clamp(18px,2.6vw,26px);}
+.overview p{margin:0 0 12px;color:var(--ink-2);font-size:15.5px;}
+.overview p:last-child{margin-bottom:0;}
+.overview strong{color:var(--rose-deep);}
+
+/* 精选卡 */
+.grid-feature{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;}
+.card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);display:flex;flex-direction:column;transition:transform .2s ease,box-shadow .2s ease;}
+.card:hover{transform:translateY(-3px);box-shadow:var(--shadow-l);}
+.card img{width:100%;height:132px;object-fit:cover;}
+.card-body{padding:14px 15px 16px;display:flex;flex-direction:column;gap:7px;flex:1;}
+.card-tag{font-family:var(--font-sans);font-size:11.5px;color:var(--rose);letter-spacing:.08em;}
+.card h3{font-size:16px;line-height:1.5;}
+.card h3 a{color:var(--ink);}
+.card p{font-size:13.5px;color:var(--ink-2);margin:0;line-height:1.75;}
+.card-meta{font-family:var(--font-sans);font-size:12px;color:var(--ink-3);margin-top:auto;display:flex;gap:10px;flex-wrap:wrap;}
+
+/* 最新更新紧凑列表 */
+.update-list{border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:#fff;}
+.update-list li{display:grid;grid-template-columns:74px minmax(0,1fr) auto;gap:14px;align-items:baseline;padding:12px 16px;border-bottom:1px dashed var(--line);font-size:14.5px;}
+.update-list li:last-child{border-bottom:0;}
+.update-list time{font-family:var(--font-sans);font-size:12.5px;color:var(--rose-deep);}
+.update-list .what{color:var(--ink);}
+.update-list .what small{display:block;font-size:12.5px;color:var(--ink-3);font-family:var(--font-sans);margin-top:2px;}
+.update-list .chap{font-family:var(--font-sans);font-size:12px;color:var(--ink-3);white-space:nowrap;}
+
+/* 分类标签索引 */
+.tag-index{display:flex;flex-wrap:wrap;gap:9px;}
+.tag-index a{font-family:var(--font-sans);font-size:13.5px;padding:7px 15px;border:1px solid var(--line);border-radius:20px;background:var(--blush);color:var(--ink-2);transition:background .18s,color .18s;}
+.tag-index a:hover{background:var(--rose);border-color:var(--rose);color:#fff;text-decoration:none;}
+.tag-index a i{font-style:normal;font-size:11.5px;color:var(--ink-3);margin-left:5px;}
+.tag-index a:hover i{color:rgba(255,255,255,.8);}
+
+/* 深度解析 */
+.deep{border-left:3px solid var(--rose);background:linear-gradient(180deg,#fffdfd,#fdf7f9);padding:clamp(18px,2.6vw,30px);border-radius:0 var(--radius) var(--radius) 0;box-shadow:var(--shadow);}
+.deep .lead{font-size:15.5px;color:var(--ink-2);margin-top:0;}
+.deep h3{font-size:17.5px;color:var(--rose-deep);margin:24px 0 10px;}
+.deep h3:first-of-type{margin-top:18px;}
+.deep p{font-size:15.5px;color:var(--ink);
+  margin:0 0 12px;}
+.deep ul{margin:0 0 14px;padding-left:0;}
+.deep ul li{position:relative;padding-left:20px;margin-bottom:8px;font-size:15px;color:var(--ink);}
+.deep ul li::before{content:"";position:absolute;left:4px;top:.75em;width:6px;height:6px;border-radius:50%;background:var(--rose);}
+.judge{background:#fff;border:1px solid var(--line);border-radius:var(--radius-s);padding:14px 16px;margin:14px 0;font-size:15px;}
+.judge b{color:var(--rose-deep);}
+.compare{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--line);border-radius:var(--radius-s);overflow:hidden;margin:14px 0;font-size:14px;}
+.compare > div{padding:12px 14px;}
+.compare .col-a{background:var(--blush);border-right:1px solid var(--line);}
+.compare .col-b{background:var(--cream);}
+.compare h4{font-size:13.5px;font-family:var(--font-sans);color:var(--rose-deep);letter-spacing:.05em;margin-bottom:6px;}
+.compare p{margin:0;font-size:13.5px;color:var(--ink-2);}
+.checklist{counter-reset:ck;display:grid;gap:9px;margin:14px 0;}
+.checklist li{counter-increment:ck;display:grid;grid-template-columns:26px 1fr;gap:10px;align-items:start;font-size:14.5px;}
+.checklist li::before{content:counter(ck);font-family:var(--font-sans);font-size:12px;color:#fff;background:var(--rose);width:22px;height:22px;border-radius:50%;display:grid;place-items:center;margin-top:3px;}
+
+/* 体验指南步骤 */
+.steps{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;}
+.step{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:16px 16px 15px;position:relative;}
+.step .num{font-family:var(--font-sans);font-size:12px;letter-spacing:.1em;color:var(--rose);display:block;margin-bottom:6px;}
+.step h3{font-size:15.5px;margin-bottom:6px;color:var(--ink);}
+.step p{font-size:13.5px;color:var(--ink-2);margin:0;}
+
+/* 引语卡 */
+.quote-panel{background:var(--rose-deep);color:#fff;border-radius:var(--radius);padding:clamp(20px,3vw,30px);position:relative;overflow:hidden;}
+.quote-panel::after{content:"”";position:absolute;right:14px;bottom:-32px;font-size:150px;line-height:1;color:rgba(255,255,255,.12);font-family:Georgia,serif;}
+.quote-panel blockquote{margin:0 0 14px;font-size:17px;line-height:1.9;}
+.quote-panel cite{font-style:normal;font-family:var(--font-sans);font-size:13px;color:rgba(255,255,255,.78);}
+.quote-panel .rows{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:18px;border-top:1px solid rgba(255,255,255,.22);padding-top:14px;font-family:var(--font-sans);font-size:12.5px;color:rgba(255,255,255,.85);}
+.quote-panel .rows b{display:block;font-family:var(--font);font-size:19px;color:#fff;}
+
+/* FAQ */
+.faq details{border:1px solid var(--line);border-radius:var(--radius-s);background:#fff;margin-bottom:9px;overflow:hidden;}
+.faq summary{cursor:pointer;padding:13px 42px 13px 16px;font-size:15px;font-weight:600;color:var(--ink);position:relative;list-style:none;}
+.faq summary::-webkit-details-marker{display:none;}
+.faq summary::after{content:"+";position:absolute;right:16px;top:50%;transform:translateY(-50%);color:var(--rose);font-size:20px;line-height:1;font-family:var(--font-sans);}
+.faq details[open] summary::after{content:"−";}
+.faq summary:hover{background:var(--blush);}
+.faq .ans{padding:0 16px 15px;font-size:14.5px;color:var(--ink-2);border-top:1px dashed var(--line);padding-top:12px;margin-top:0;}
+
+/* 评论 */
+.comments{display:grid;gap:12px;}
+.comment{background:#fff;border:1px solid var(--line);border-radius:var(--radius-s);padding:13px 15px;font-size:14px;color:var(--ink-2);}
+.comment .who{font-family:var(--font-sans);font-size:12.5px;color:var(--rose-deep);margin-bottom:4px;display:flex;gap:10px;flex-wrap:wrap;align-items:baseline;}
+.comment .who time{color:var(--ink-3);font-size:11.5px;}
+.comment p{margin:0;}
+.comment strong{color:var(--ink);}
+
+/* 相关资讯 */
+.news-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
+.news-item{border:1px solid var(--line);border-radius:var(--radius-s);padding:14px 15px;background:var(--cream);}
+.news-item time{font-family:var(--font-sans);font-size:12px;color:var(--rose-deep);display:block;margin-bottom:5px;}
+.news-item h3{font-size:15px;margin-bottom:5px;}
+.news-item p{margin:0;font-size:13.5px;color:var(--ink-2);}
+
+/* 相关推荐 */
+.rec-tags{display:flex;flex-wrap:wrap;gap:9px;}
+.rec-tags a{font-family:var(--font-sans);font-size:13px;padding:6px 14px;border-radius:6px;background:var(--rose-soft);color:var(--rose-deep);}
+.rec-tags a:hover{background:var(--rose);color:#fff;text-decoration:none;}
+
+/* 榜单 */
+.rank{display:grid;gap:0;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:#fff;}
+.rank li{display:grid;grid-template-columns:34px minmax(0,1fr) auto;gap:12px;align-items:center;padding:11px 16px;border-bottom:1px solid var(--line);font-size:14.5px;}
+.rank li:last-child{border-bottom:0;}
+.rank .no{font-family:var(--font-sans);font-size:13px;color:var(--ink-3);text-align:center;}
+.rank li:nth-child(1) .no{color:var(--rose);font-weight:700;}
+.rank .title{color:var(--ink);}
+.rank .title small{display:block;color:var(--ink-3);font-size:12px;font-family:var(--font-sans);}
+.rank .score{font-family:var(--font-sans);font-size:12.5px;color:var(--rose-deep);}
+
+/* 侧栏 */
+aside{font-size:14px;}
+.side-card{background:var(--cream);border:1px solid var(--line);border-radius:var(--radius);padding:16px 16px 18px;margin-bottom:16px;}
+.side-card h2,.side-card h3{font-size:15px;letter-spacing:.05em;color:var(--rose-deep);margin-bottom:10px;display:flex;align-items:center;gap:7px;}
+.side-card h2::before,.side-card h3::before{content:"";width:4px;height:15px;background:var(--rose);border-radius:2px;}
+.side-nav{position:sticky;top:calc(var(--announce-h) + var(--head-h) + 14px);}
+.side-nav ul{display:grid;gap:2px;}
+.side-nav a{display:block;font-family:var(--font-sans);font-size:13.5px;color:var(--ink-2);padding:6px 10px;border-radius:6px;border-left:2px solid transparent;}
+.side-nav a:hover{background:var(--blush);text-decoration:none;}
+.side-nav a.active{color:var(--rose-deep);background:var(--blush);border-left-color:var(--rose);font-weight:600;}
+.side-list li{padding:8px 0;border-bottom:1px dashed var(--line);font-size:13.5px;}
+.side-list li:last-child{border-bottom:0;padding-bottom:0;}
+.side-list time{display:block;font-family:var(--font-sans);font-size:11.5px;color:var(--ink-3);}
+.side-note{font-size:13px;color:var(--ink-2);margin:0 0 8px;}
+.notice{background:#fff;border:1px dashed var(--rose);border-radius:var(--radius-s);padding:12px 14px;font-size:13px;color:var(--ink-2);}
+
+/* 页脚 */
+.site-foot{background:#2c2530;color:#e6dde2;padding:clamp(30px,4vw,48px) 0 24px;font-family:var(--font-sans);}
+.foot-top{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:26px;padding-bottom:26px;border-bottom:1px solid rgba(255,255,255,.14);}
+.foot-brand .brand-name{color:#fff;font-size:18px;font-family:var(--font);}
+.foot-brand p{font-size:13px;color:#b8aab5;margin:10px 0 0;line-height:1.9;}
+.foot-col h3{font-size:13.5px;color:#f6d7e0;margin-bottom:10px;letter-spacing:.05em;}
+.foot-col a{display:block;font-size:13px;color:#c9bcc6;padding:3px 0;}
+.foot-col a:hover{color:#fff;}
+.foot-bottom{padding-top:18px;display:flex;flex-wrap:wrap;gap:8px 20px;font-size:12px;color:#9c8e99;line-height:1.9;}
+.foot-bottom span{display:inline-block;}
+
+/* 回顶 */
+.to-top{position:fixed;right:18px;bottom:22px;z-index:70;width:44px;height:44px;border-radius:50%;border:1px solid var(--line);background:#fff;color:var(--rose-deep);box-shadow:var(--shadow-l);display:grid;place-items:center;cursor:pointer;opacity:0;visibility:hidden;transform:translateY(8px);transition:opacity .22s,transform .22s,visibility .22s;}
+.to-top.show{opacity:1;visibility:visible;transform:none;}
+.to-top svg{width:18px;height:18px;}
+
+/* 响应式 */
+@media (max-width:980px){
+  .layout{grid-template-columns:1fr;}
+  aside{display:grid;grid-template-columns:1fr 1fr;gap:16px;align-items:start;}
+  .side-nav{position:static;}
+  .side-card{margin-bottom:0;}
+  .hero-inner{grid-template-columns:1fr;gap:20px;}
+  .hero-art{order:-1;min-height:0;justify-content:flex-start;}
+  .hero-art svg{max-width:280px;}
+  .hero-art .caption{position:static;display:inline-block;margin-top:6px;}
+  .grid-feature{grid-template-columns:repeat(2,minmax(0,1fr));}
+  .foot-top{grid-template-columns:1fr 1fr;}
+}
+@media (max-width:720px){
+  :root{--head-h:56px;}
+  .head-nav{display:none;position:absolute;left:0;right:0;top:var(--head-h);background:#fff;border-bottom:1px solid var(--line);flex-direction:column;padding:8px var(--space) 14px;gap:2px;box-shadow:var(--shadow-l);}
+  .head-nav.open{display:flex;}
+  .head-nav a{padding:10px 8px;font-size:14.5px;border-bottom:1px dashed var(--line);border-radius:0;}
+  .head-nav a:last-child{border-bottom:0;}
+  .site-head{position:relative;}
+  .head-inner{position:relative;}
+  .menu-btn{display:inline-flex;}
+  .search-box input{width:96px;}
+  .grid-feature{grid-template-columns:1fr;}
+  .news-grid{grid-template-columns:1fr;}
+  .steps{grid-template-columns:1fr;}
+  .compare{grid-template-columns:1fr;}
+  .compare .col-a{border-right:0;border-bottom:1px solid var(--line);}
+  .update-list li{grid-template-columns:minmax(0,1fr);gap:2px;}
+  .update-list .chap{justify-self:start;}
+  aside{grid-template-columns:1fr;}
+  .foot-top{grid-template-columns:1fr;gap:18px;}
+  .quote-panel .rows{grid-template-columns:1fr 1fr;}
+  .to-top{right:12px;bottom:16px;width:40px;height:40px;}
+  .hero-stats{gap:8px 20px;}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto;}
+  *{transition:none!important;animation:none!important;}
+  .card:hover,.btn:hover{transform:none;}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<div class="sticky-shell">
+  <div class="announce" role="region" aria-label="站点更新公告">
+    <div class="wrap">
+      <span class="tag">更新</span>
+      <p>11月7日《春汛卷》第14章“雨停之后”上线，关系图同步补入“共写”标记；11月5日新增考据《叉点的三个出处》，对应<a href="/#deep">深度解析</a>。</p>
+    </div>
+  </div>
+  <header class="site-head">
+    <div class="wrap head-inner">
+      <a class="brand" href="/#hero" aria-label="糖心情深叉喔 首页">
+        <svg viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+          <defs>
+            <linearGradient id="lg1" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#f6d7e0"/>
+              <stop offset="1" stop-color="#f3b6c9"/>
+            </linearGradient>
+          </defs>
+          <rect x="1" y="1" width="46" height="46" rx="12" fill="url(#lg1)"/>
+          <path d="M24 9l4.4 8.6 9.6 1.4-7 6.8 1.7 9.6L24 31l-8.7 4.4 1.7-9.6-7-6.8 9.6-1.4z" fill="#c2456b"/>
+          <circle cx="24" cy="24" r="3.2" fill="#fffdfd"/>
+        </svg>
+        <span class="brand-name">糖心情深叉喔</span>
+      </a>
+      <nav class="head-nav" id="headNav" aria-label="主题导航">
+        <a href="/#overview">领域概览</a>
+        <a href="/#featured">精选推荐</a>
+        <a href="/#updates">最新更新</a>
+        <a href="/#channels">分类入口</a>
+        <a href="/#deep">深度解析</a>
+        <a href="/#guide">体验指南</a>
+        <a href="/#faq">常见问题</a>
+        <a href="/#news">相关资讯</a>
+      </nav>
+      <div class="head-tools">
+        <div class="search-box">
+          <input id="siteSearch" type="search" placeholder="搜索章节 / 设定" aria-label="站内搜索">
+          <button type="button" id="searchBtn">查找</button>
+        </div>
+        <button class="menu-btn" type="button" id="menuBtn" aria-expanded="false" aria-controls="headNav" aria-label="打开导航菜单">
+          <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+</div>
+
+<div class="hero" id="hero">
+  <div class="wrap hero-inner">
+    <div>
+      <span class="hero-kicker">同人设定 · 分章索引</span>
+      <h1>糖心情深<em>叉喔</em></h1>
+      <p class="hero-lead">两条时间线在第七节交汇处岔开，一支停在“共写”的合照前，另一支走进夜班糖铺的收银台。收录三卷主线、一册番外、12篇短篇与关系图的逐章标注，按“叉点”前后排好顺序再读，会比顺着更新反着读省下不少来回翻页的工夫。</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="/#updates">从第14章接着读</a>
+        <a class="btn btn-ghost" href="/#deep">看叉点对照</a>
+      </div>
+      <div class="hero-stats">
+        <div><b>3</b>卷主线分章</div>
+        <div><b>12</b>篇短篇合集</div>
+        <div><b>41</b>条关系连线</div>
+        <div><b>8</b>位投稿人</div>
+      </div>
+    </div>
+    <div class="hero-art">
+      <svg viewBox="0 0 360 300" role="img" aria-label="两条时间线在第七节分岔、一支汇入糖铺的原创插画">
+        <defs>
+          <linearGradient id="track1" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0" stop-color="#f3b6c9"/><stop offset="1" stop-color="#c2456b"/>
+          </linearGradient>
+          <linearGradient id="track2" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0" stop-color="#e9d7dd"/><stop offset="1" stop-color="#b98a3c"/>
+          </linearGradient>
+        </defs>
+        <rect x="8" y="8" width="344" height="284" rx="18" fill="#fffafb" stroke="#e9d7dd"/>
+        <path d="M40 220 C120 220 150 120 230 100 S330 70 340 52" fill="none" stroke="url(#track1)" stroke-width="4" stroke-linecap="round"/>
+        <path d="M40 220 C110 230 150 200 214 168 S300 150 340 176" fill="none" stroke="url(#track2)" stroke-width="3" stroke-dasharray="7 6" stroke-linecap="round"/>
+        <circle cx="40" cy="220" r="7" fill="#c2456b"/>
+        <circle cx="230" cy="100" r="5" fill="#c2456b"/>
+        <circle cx="214" cy="168" r="5" fill="#b98a3c"/>
+        <g transform="translate(228,84)">
+          <rect x="-4" y="-34" width="58" height="22" rx="11" fill="#c2456b"/>
+          <text x="25" y="-19" text-anchor="middle" font-size="11" fill="#fff" font-family="sans-serif">叉点·第七节</text>
+        </g>
+        <g transform="translate(272,196)">
+          <rect x="-32" y="-20" width="96" height="58" rx="10" fill="#fff" stroke="#e9d7dd"/>
+          <path d="M-20 -6 h72" stroke="#e9d7dd" stroke-width="3" stroke-linecap="round"/>
+          <path d="M-20 4 h52" stroke="#f3b6c9" stroke-width="3" stroke-linecap="round"/>
+          <path d="M-20 14 h60" stroke="#f3b6c9" stroke-width="3" stroke-linecap="round"/>
+          <path d="M-32 38 l14 12 -14 6z" fill="#c2456b"/>
+          <text x="-2" y="52" text-anchor="middle" font-size="10" fill="#8e2f4e" font-family="sans-serif">夜班糖铺</text>
+        </g>
+        <g transform="translate(56,236)">
+          <circle cx="0" cy="0" r="16" fill="#f6d7e0"/>
+          <path d="M0 -8 l2.6 5.2 5.7.8-4.1 4 1 5.7L0 5l-5.2 2.7 1-5.7-4.1-4 5.7-.8z" fill="#c2456b"/>
+        </g>
+        <text x="300" y="48" text-anchor="middle" font-size="10" fill="#8b8090" font-family="sans-serif">主线</text>
+        <text x="318" y="192" text-anchor="middle" font-size="10" fill="#8b8090" font-family="sans-serif">支线</text>
+      </svg>
+      <span class="caption">原创示意图：叉点与夜班糖铺的位置</span>
+    </div>
+  </div>
+</div>
+
+<div class="wrap layout">
+<main>
+
+  <!-- 概览 -->
+  <section class="block" id="overview" aria-labelledby="h-overview">
+    <div class="block-head">
+      <h2 id="h-overview">领域概览</h2>
+      <span class="sub">三条阅读路径与角色分工</span>
+    </div>
+    <div class="overview">
+      <p>围绕“糖心情深叉喔”的创作，主要由三卷主线、一册番外《叉喔的十七封信》、短篇合集《夜班糖铺》与一张关系图构成。截至2026年11月7日，主线更新至《春汛卷》第14章，总章数36章；番外已完稿17封；关系图记录41条连线，其中标注“未确认设定”的有6条。</p>
+      <p><strong>三条阅读路径</strong>：追更者沿更新顺序读；解谜者对时间线感兴趣，先读“叉点”对照再回正文；考据者看版本差异与旧稿。三条路径的分歧集中在第7章、第2章双视角重叠处，以及《秋雾卷》第3节的两次重写。</p>
+      <p>角色分工清晰：主笔糖某负责正文，画师阿沉负责关系图与卷首插，校对小组“糖纸”三人负责番外信件的时间标记核对。投稿栏由夜班糖铺常驻读者轮值，每周四汇总。</p>
+    </div>
+  </section>
+
+  <!-- 精选推荐 -->
+  <section class="block" id="featured" aria-labelledby="h-featured">
+    <div class="block-head">
+      <h2 id="h-featured">精选内容推荐</h2>
+      <span class="sub">三段配合阅读顺序的精选</span>
+      <a class="more" href="/#channels">全部分类 →</a>
+    </div>
+    <div class="grid-feature">
+      <article class="card">
+        <img src="https://picsum.photos/seed/tangxin-chunxun/560/300" width="560" height="300" loading="lazy" alt="春汛卷卷首插：河堤边长椅与一封摊开的信">
+        <div class="card-body">
+          <span class="card-tag">卷首 · 主线</span>
+          <h3><a href="/#updates">《春汛卷》第14章“雨停之后”</a></h3>
+          <p>第13章末那句“信没有寄出去”在本章得到回应：收信人换了，信纸上的称呼保留。全章共4个场景，第3场有一段旧对白的重述。</p>
+          <div class="card-meta"><span>11月7日</span><span>约4100字</span></div>
+        </div>
+      </article>
+      <article class="card">
+        <img src="https://picsum.photos/seed/yeban-tangpu/560/300" width="560" height="300" loading="lazy" alt="夜班糖铺内部：玻璃柜台上一排玻璃罐与手写价签">
+        <div class="card-body">
+          <span class="card-tag">短篇合集</span>
+          <h3><a href="/#guide">《夜班糖铺》12篇的阅读顺序</a></h3>
+          <p>12篇里8篇首发、4篇修订。修订集中在对话语气与两处时间标记；旧稿对照页保留原句，可逐句比对“第4篇结尾换了谁关灯”这一处。</p>
+          <div class="card-meta"><span>11月4日</span><span>12篇</span></div>
+        </div>
+      </article>
+      <article class="card">
+        <img src="https://picsum.photos/seed/chadian-duizhao/560/300" width="560" height="300" loading="lazy" alt="桌面摊开的两版关系图，红笔标出分岔位置">
+        <div class="card-body">
+          <span class="card-tag">考据 · 对照</span>
+          <h3><a href="/#deep">叉点的三个出处与两处误传</a></h3>
+          <p>“叉点”在正文出现三次，分别在第7章、番外第9封与《秋雾卷》第3节。两处误传把“叉”当成人名，考据页附了原句截图说明。</p>
+          <div class="card-meta"><span>11月5日</span><span>含原句</span></div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- 最新更新 -->
+  <section class="block" id="updates" aria-labelledby="h-updates">
+    <div class="block-head">
+      <h2 id="h-updates">最新更新</h2>
+      <span class="sub">2026年10月9日—11月7日</span>
+    </div>
+    <ul class="update-list">
+      <li><time datetime="2026-11-07">11月7日</time><span class="what">《春汛卷》第14章“雨停之后”<small>新增4个场景，收信人更换，旧对白重述1处</small></span><span class="chap">主线 · 36章</span></li>
+      <li><time datetime="2026-11-06">11月6日</time><span class="what">关系图 v4.2：补“共写”标记<small>41条连线中第17、第23条改标主色</small></span><span class="chap">设定</span></li>
+      <li><time datetime="2026-11-05">11月5日</time><span class="what">考据《叉点的三个出处》<small>附第7章原句与番外第9封信段落</small></span><span class="chap">考据</span></li>
+      <li><time datetime="2026-11-04">11月4日</time><span class="what">《夜班糖铺》修订版上架<small>4篇旧作调整对话语气与2处时间标记</small></span><span class="chap">短篇 · 12篇</span></li>
+      <li><time datetime="2026-11-02">11月2日</time><span class="what">番外《叉喔的十七封信》第17封完稿<small>落款日期为10月31日，与主线第12章互证</small></span><span class="chap">番外 · 完</span></li>
+      <li><time datetime="2026-10-30">10月30日</time><span class="what">《甜度校准》合集置顶说明更新<small>两条旧支线降为“未确认设定”</small></span><span class="chap">设定</span></li>
+      <li><time datetime="2026-10-26">10月26日</time><span class="what">第7章双视角版本合并<small>主线版保留，番外版标注“并读”</small></span><span class="chap">修订</span></li>
+      <li><time datetime="2026-10-18">10月18日</time><span class="what">《秋雾卷》第3节第二次重写<small>删去原第2段独白，改入第5节对话</small></span><span class="chap">主线</span></li>
+    </ul>
+  </section>
+
+  <!-- 分类入口 -->
+  <section class="block" id="channels" aria-labelledby="h-channels">
+    <div class="block-head">
+      <h2 id="h-channels">分类入口</h2>
+      <span class="sub">10个频道 · 括号为条目数</span>
+    </div>
+    <div class="tag-index">
+      <a href="/#updates">春汛卷分章 <i>14</i></a>
+      <a href="/#updates">夏夜卷分章 <i>12</i></a>
+      <a href="/#updates">秋雾卷分章 <i>10</i></a>
+      <a href="/#guide">夜班糖铺短篇 <i>12</i></a>
+      <a href="/#guide">叉喔的十七封信 <i>17</i></a>
+      <a href="/#deep">叉点考据 <i>6</i></a>
+      <a href="/#deep">角色关系图 <i>41</i></a>
+      <a href="/#deep">旧稿对照 <i>9</i></a>
+      <a href="/#comments">读者评论精选 <i>23</i></a>
+      <a href="/#rank">本月收藏榜 <i>10</i></a>
+    </div>
+  </section>
+
+  <!-- 深度解析 -->
+  <section class="block" id="deep" aria-labelledby="h-deep">
+    <div class="block-head">
+      <h2 id="h-deep">深度解析</h2>
+      <span class="sub">叉点位置与两处误传</span>
+    </div>
+    <div class="deep">
+      <p class="lead">“叉点”不是人物名，是两条时间线在第七节的分岔处。这个结论在10月30日《甜度校准》置顶说明里被作者明确写下，但社区里仍有两种流传更广的说法：一是把“叉”当成某个角色的别名，二是认为岔口发生在第3章。前者可以在原文找到反证，后者源于旧稿版本排序。</p>
+
+      <h3>一、叉点的三处正文出处与日期</h3>
+      <ul>
+        <li>第7章“半封信”第2段：原文写“路在这里分成两条，都通糖铺”，首次出现“叉”字，发布于2026年3月12日。</li>
+        <li>番外第9封（寄信人：糖纸轮值）：落款3月19日，写“你走的那条我走过，岔口有块砖松了”，把分岔写成可触碰的物证。</li>
+        <li>《秋雾卷》第3节第5段：10月18日重写版把独白挪进对话，保留“叉”字但去掉了时间副词，使岔口不再指具体某天。</li>
+      </ul>
+      <p>三处出处有一个共同点：分岔都由“信件是否寄出”触发，而不是由人物选择触发。凡是把分岔归因于角色性格的讨论，都缺少原文里“信”这个动作。</p>
+
+      <h3>二、两处误传的来路</h3>
+      <div class="compare">
+        <div class="col-a">
+          <h4>说法 A：叉是角色别名</h4>
+          <p>出处是2025年12月的一张二创分组图，图上把“叉”写在角色名旁，后被转载时省掉了图注。</p>
+        </div>
+        <div class="col-b">
+          <h4>说法 B：岔口在第3章</h4>
+          <p>出处是旧稿排序：2025年版把第3章与第7章调换过，重写后排回，旧目录仍在缓存里流传。</p>
+        </div>
+      </div>
+      <p>两条误传都可以核对。别名说在两处原文反证；岔口位置在2026年10月26日的合并说明里被明确修正，主线版第7章为唯一主版本，番外版标注“并读”。</p>
+
+      <h3>三、可核对判断：先读第7章再看番外</h3>
+      <div class="judge"><b>判断：</b>先读第7章“半封信”，再读番外第9封，理解成本比反过来低。理由有三条可核对：第7章先给出“都通糖铺”的空间信息，第9封才补“砖松了”的触觉细节；第7章发布早于第9封7天；合并说明把主线版列为主版本，番外为并读。若反向阅读，读者要先处理“砖松了”的细节再等空间设定，两处信息会各自悬空。</div>
+      <p>这条判断可以被反驳：若读者目的只是追信件的情感线，第9封的独立性足够，先读不构成障碍。所以它成立的条件是“读者在意空间设定是否落地”。</p>
+
+      <h3>四、拆成可核对的四步</h3>
+      <ol class="checklist">
+        <li>打开第7章第2段，确认“叉”字出现的位置与同日发布记录。</li>
+        <li>打开番外第9封，核对落款3月19日与“砖松了”原句。</li>
+        <li>对照10月26日合并说明，确认主线版为唯一主版本。</li>
+        <li>最后再看《秋雾卷》第3节重写版，注意时间副词被删后岔口不再指具体日期。</li>
+      </ol>
+      <p>四步里的第4步最容易被跳过。时间副词删除后，叉点从“3月某日发生的事”变成“一种结构”，这正是把它当成人名或单一章节的读法会失准的地方。</p>
+
+      <h3>五、重写前后的一处措辞差</h3>
+      <p>《秋雾卷》第3节首版（2026年9月20日）写“那天之后他再没走那条路”；10月18日重写版改为“那条路上的砖还是松的”。前者带明确时间与人物去向，后者只留物证。对照两版可见，重写不是删减情绪，而是把可追责的主体从人换到环境。社区里“第3节改得没味了”的说法，依据多为首版记忆，而非两版对读。</p>
+    </div>
+  </section>
+
+  <!-- 体验指南 -->
+  <section class="block" id="guide" aria-labelledby="h-guide">
+    <div class="block-head">
+      <h2 id="h-guide">体验指南</h2>
+      <span class="sub">第一次进入的四个步骤</span>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <span class="num">STEP 01</span>
+        <h3>先定阅读目标</h3>
+        <p>追更读者从《春汛卷》第14章进入；解谜读者从“叉点”对照开始；只想看短篇的，直接进《夜班糖铺》第1、第4、第9篇，这三篇不依赖主线前情。</p>
+      </div>
+      <div class="step">
+        <span class="num">STEP 02</span>
+        <h3>核对版本标记</h3>
+        <p>每章标题旁标注“主线版”“并读版”“旧稿”。并读版不要单独读，需与主线版对照；旧稿只作措辞比较，不作为情节依据。第3章与第7章都经历过调换。</p>
+      </div>
+      <div class="step">
+        <span class="num">STEP 03</span>
+        <h3>用关系图定位连线</h3>
+        <p>41条连线里，标注“共写”的2条是11月6日新增；标注“未确认设定”的6条不进入正文推论。关系图每条连线标首次出处章节，先看章节号再回正文。</p>
+      </div>
+      <div class="step">
+        <span class="num">STEP 04</span>
+        <h3>投稿与回看</h3>
+        <p>投稿栏每周四汇总，选用卡片标注昵称与提交日期；改写超过三处会退稿并说明原因。回看时优先看“旧稿对照”9条，能省掉重复比对两版正文的时间。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 引语 / 创作者证言 -->
+  <section class="block" id="voice" aria-labelledby="h-voice">
+    <div class="block-head">
+      <h2 id="h-voice">创作者证言</h2>
+      <span class="sub">主笔与画师各一句</span>
+    </div>
+    <div class="quote-panel">
+      <blockquote>“第14章那封信的称呼我改了三次，最后留下的版本让收信人换了，但信纸还是原来那张。写的时候把第9封摊在旁边，怕把‘砖松了’这个细节写重。”</blockquote>
+      <cite>—— 主笔 糖某，11月7日章节附言</cite>
+      <div class="rows">
+        <div><b>3</b>次称呼修改</div>
+        <div><b>1</b>处旧对白重述</div>
+        <div><b>7</b>天与第9封间隔</div>
+      </div>
+      <blockquote style="margin-top:22px;font-size:16px;">“关系图上的主色不是等级，是叙事权重。第17条改成主色之前，它已经连续出现在三章背景里，只是没人画线。”</blockquote>
+      <cite>—— 画师 阿沉，11月6日关系图 v4.2 说明</cite>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="block" id="faq" aria-labelledby="h-faq">
+    <div class="block-head">
+      <h2 id="h-faq">常见问题</h2>
+      <span class="sub">5个具体问题</span>
+    </div>
+    <div class="faq">
+      <details>
+        <summary>分章阅读顺序怎么排才不乱？</summary>
+        <div class="ans">正文按《春汛卷》《夏夜卷》《秋雾卷》推进，番外《叉喔的十七封信》可独立读但建议放在第7章之后。第2章与第7章有双视角重叠，先读标注“主线”的版本，再补“并读”版，能避开时间线断裂。旧稿不建议编入首轮阅读。</div>
+      </details>
+      <details>
+        <summary>角色关系图依据哪次说明更新？</summary>
+        <div class="ans">依据2026年10月30日作者在合集《甜度校准》中的置顶说明：两条旧支线降为“未确认设定”，主线上新增“共写”标记。11月6日的 v4.2 版在41条连线中把第17、第23条改为主色，每条连线都标了首次出处章节。</div>
+      </details>
+      <details>
+        <summary>《夜班糖铺》收录几篇、几篇是新的？</summary>
+        <div class="ans">共12篇，8篇首次公开，4篇为2025年旧作修订。修订集中在对话语气与两处时间标记，原版句子保留在“旧稿对照”附页。第4篇结尾“谁关灯”的改动是比对时最常被提到的一处。</div>
+      </details>
+      <details>
+        <summary>投稿会署名吗，改动多大范围会退？</summary>
+        <div class="ans">会署名。选用卡片右上角标投稿人昵称与提交日期，只做错字与标点整理；改写超过三处会退稿并说明原因。每周四汇总一次，退稿意见一般写清是语气问题还是时间标记问题。</div>
+      </details>
+      <details>
+        <summary>“叉”到底指什么，为什么总被当成人名？</summary>
+        <div class="ans">“叉”指两条时间线在第七节的分岔点，不是人物名，也不是标题错字。误传来自2025年12月一张二创分组图，图注在转载时被省掉。考据页列了三处正文出处与两处误传，可逐条核对。</div>
+      </details>
+    </div>
+  </section>
+
+  <!-- 用户评论 -->
+  <section class="block" id="comments" aria-labelledby="h-comments">
+    <div class="block-head">
+      <h2 id="h-comments">用户评论</h2>
+      <span class="sub">来自更新页与合集评论区</span>
+    </div>
+    <div class="comments">
+      <div class="comment">
+        <div class="who"><strong>半封信收件人</strong><time datetime="2026-11-07">11月7日</time></div>
+        <p>第14章第3场那段旧对白重述，我读了两次才确认说话人换了。不是缺点，但第一次真会被绕住。建议章节开头加个场景表。</p>
+      </div>
+      <div class="comment">
+        <div class="who"><strong>糖纸轮值-周二</strong><time datetime="2026-11-06">11月6日</time></div>
+        <p>关系图 v4.2 把第17条改主色是对的，它在前三章确实一直当背景。第23条我倒觉得权重给高了，出场两次都在回忆里。</p>
+      </div>
+      <div class="comment">
+        <div class="who"><strong>夜班常客</strong><time datetime="2026-11-05">11月5日</time></div>
+        <p>《夜班糖铺》第4篇结尾换成谁关灯之后，整篇的落点稳了不少。旧稿那句“灯自己灭的”太轻。修订版值得重读一次。</p>
+      </div>
+      <div class="comment">
+        <div class="who"><strong>砖松了</strong><time datetime="2026-11-04">11月4日</time></div>
+        <p>考据页说的“两处误传”我认第二处。旧目录缓存这事是真的，我去年存的图里第3章确实排在第7章前面，后来才发现看的是旧版。</p>
+      </div>
+      <div class="comment">
+        <div class="who"><strong>不追更的人</strong><time datetime="2026-11-02">11月2日</time></div>
+        <p>说实话第7章双视角合并之后，我反而分不清哪段是新写的。并读标记做得不够显眼，页边颜色差一点点，手机上基本看不出来。</p>
+      </div>
+      <div class="comment">
+        <div class="who"><strong>阿沉画线观察员</strong><time datetime="2026-10-30">10月30日</time></div>
+        <p>10月30日把两条旧支线降级是对的，那两条之前一共只出现过四次，其中三次是别人转述。降级之后关系图清爽很多。</p>
+      </div>
+      <div class="comment">
+        <div class="who"><strong>秋雾卷读者</strong><time datetime="2026-10-19">10月19日</time></div>
+        <p>《秋雾卷》第3节第二次重写把独白挪进对话，节奏快了，但“那天之后”这句删掉后少了点具体的痛感。两版各有各的理。</p>
+      </div>
+      <div class="comment">
+        <div class="who"><strong>十七封信</strong><time datetime="2026-11-02">11月2日</time></div>
+        <p>第17封落款10月31日，跟主线第12章互证那段我核过，日期对得上。番外能完稿挺意外，之前一直以为会停在第十五封。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 相关资讯 -->
+  <section class="block" id="news" aria-labelledby="h-news">
+    <div class="block-head">
+      <h2 id="h-news">相关资讯</h2>
+      <span class="sub">订阅号与合集页的4条动态</span>
+    </div>
+    <div class="news-grid">
+      <div class="news-item">
+        <time datetime="2026-11-07">11月7日</time>
+        <h3>《春汛卷》第14章上线与附言</h3>
+        <p>作者在章节附言里提到称呼改过三次，并说明把番外第9封摊在旁边写，避免把“砖松了”写重。附言末尾列了本章4个场景的顺序。</p>
+      </div>
+      <div class="news-item">
+        <time datetime="2026-11-06">11月6日</time>
+        <h3>关系图 v4.2 的改动清单</h3>
+        <p>共动两处：第17、第23条改主色，其余连线不动。画师阿沉在说明里写了改色依据是叙事权重而非情感强弱，评论区对此有分歧。</p>
+      </div>
+      <div class="news-item">
+        <time datetime="2026-11-04">11月4日</time>
+        <h3>《夜班糖铺》修订版与旧稿对照</h3>
+        <p>4篇旧作调整对话语气和两处时间标记，原句保留在附页。最常被比对的是第4篇结尾“谁关灯”，旧稿写“灯自己灭的”。</p>
+      </div>
+      <div class="news-item">
+        <time datetime="2026-10-30">10月30日</time>
+        <h3>《甜度校准》置顶说明更新</h3>
+        <p>两条旧支线降为“未确认设定”，主线上新增“共写”标记。说明里同时确认第7章主线版为唯一主版本，番外版改为并读。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 相关推荐 -->
+  <section class="block" id="recommend" aria-labelledby="h-recommend">
+    <div class="block-head">
+      <h2 id="h-recommend">相关推荐</h2>
+      <span class="sub">按具体条目跳转</span>
+    </div>
+    <div class="rec-tags">
+      <a href="/#deep">叉点三个出处逐句核对</a>
+      <a href="/#guide">夜班糖铺不依赖前情的三篇</a>
+      <a href="/#deep">旧稿对照：第3节措辞差</a>
+      <a href="/#updates">第7章双视角合并说明</a>
+      <a href="/#deep">关系图未确认设定6条清单</a>
+      <a href="/#comments">第14章对白重述的读者分歧</a>
+      <a href="/#rank">本月收藏榜前10</a>
+      <a href="/#voice">主笔与画师的原话</a>
+    </div>
+  </section>
+
+  <!-- 榜单 -->
+  <section class="block" id="rank" aria-labelledby="h-rank">
+    <div class="block-head">
+      <h2 id="h-rank">本月收藏榜</h2>
+      <span class="sub">截至11月7日 · 按收藏数</span>
+    </div>
+    <ol class="rank">
+      <li><span class="no">01</span><span class="title">春汛卷 第14章 雨停之后<small>11月7日 · 主线 · 4100字</small></span><span class="score">收藏 1268</span></li>
+      <li><span class="no">02</span><span class="title">番外 第17封信 落款10月31日<small>11月2日 · 番外完稿</small></span><span class="score">收藏 1103</span></li>
+      <li><span class="no">03</span><span class="title">夜班糖铺 第4篇 修订版<small>11月4日 · 旧稿对照附页</small></span><span class="score">收藏 964</span></li>
+      <li><span class="no">04</span><span class="title">叉点的三个出处<small>11月5日 · 考据 · 含原句</small></span><span class="score">收藏 887</span></li>
+      <li><span class="no">05</span><span class="title">春汛卷 第7章 半封信<small>3月12日原发 · 10月26日合并</small></span><span class="score">收藏 842</span></li>
+      <li><span class="no">06</span><span class="title">秋雾卷 第3节 重写版<small>10月18日 · 独白改入对话</small></span><span class="score">收藏 776</span></li>
+      <li><span class="no">07</span><span class="title">关系图 v4.2 全图<small>11月6日 · 41条连线</small></span><span class="score">收藏 731</span></li>
+      <li><span class="no">08</span><span class="title">夏夜卷 第9章 收银台<small>10月11日 · 主线</small></span><span class="score">收藏 690</span></li>
+      <li><span class="no">09</span><span class="title">夜班糖铺 第9篇<small>11月4日 · 独立短篇</small></span><span class="score">收藏 655</span></li>
+      <li><span class="no">10</span><span class="title">旧稿对照 9条汇总<small>持续更新 · 措辞比较</small></span><span class="score">收藏 602</span></li>
+    </ol>
+  </section>
+
+</main>
+
+<aside aria-label="侧栏导航与补充信息">
+  <div class="side-card side-nav">
+    <h2>本页导航</h2>
+    <ul id="sideNavList">
+      <li><a href="/#overview">领域概览</a></li>
+      <li><a href="/#featured">精选推荐</a></li>
+      <li><a href="/#updates">最新更新</a></li>
+      <li><a href="/#channels">分类入口</a></li>
+      <li><a href="/#deep">深度解析</a></li>
+      <li><a href="/#guide">体验指南</a></li>
+      <li><a href="/#voice">创作者证言</a></li>
+      <li><a href="/#faq">常见问题</a></li>
+      <li><a href="/#comments">用户评论</a></li>
+      <li><a href="/#news">相关资讯</a></li>
+      <li><a href="/#recommend">相关推荐</a></li>
+      <li><a href="/#rank">本月收藏榜</a></li>
+    </ul>
+  </div>
+  <div class="side-card">
+    <h3>本周投稿</h3>
+    <ul class="side-list">
+      <li><time datetime="2026-11-07">11月7日</time>“雨停之后”第2场扩写 · 投稿人 半封信收件人</li>
+      <li><time datetime="2026-11-06">11月6日</time>关系图第17条的前三章出处整理 · 投稿人 阿沉画线观察员</li>
+      <li><time datetime="2026-11-04">11月4日</time>第4篇结尾两版对读 · 投稿人 夜班常客</li>
+    </ul>
+  </div>
+  <div class="side-card">
+    <h3>示例数据说明</h3>
+    <p class="side-note">收藏数、投稿人昵称、章节字数与连线数为编辑整理用的示例数据，用于展示索引结构。</p>
+    <div class="notice">引用原句时请以合集内“旧稿对照”附页为准；标注“未确认设定”的6条连线不进入正文推论。</div>
+  </div>
+</aside>
+</div>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <span class="brand-name">糖心情深叉喔</span>
+        <p>两条时间线在第七节岔开，一支停在合照前，一支走进夜班糖铺。这里把分章、番外、关系图与旧稿对照放在同一张索引上，按“叉点”前后排好顺序再读。</p>
+      </div>
+      <div class="foot-col">
+        <h3>分章阅读</h3>
+        <a href="/#updates">春汛卷 14章</a>
+        <a href="/#updates">夏夜卷 12章</a>
+        <a href="/#updates">秋雾卷 10章</a>
+        <a href="/#guide">番外 十七封信</a>
+      </div>
+      <div class="foot-col">
+        <h3>设定与考据</h3>
+        <a href="/#deep">叉点三个出处</a>
+        <a href="/#deep">旧稿对照 9条</a>
+        <a href="/#deep">关系图未确认设定</a>
+        <a href="/#voice">创作者证言</a>
+      </div>
+      <div class="foot-col">
+        <h3>互动与排行</h3>
+        <a href="/#comments">读者评论精选</a>
+        <a href="/#rank">本月收藏榜</a>
+        <a href="/#recommend">相关推荐标签</a>
+        <a href="/#faq">常见问题</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>页面更新：2026年11月7日 22:40，对应“第14章上线”与“关系图 v4.2”两项可核对更新。</span>
+      <span>收藏数、昵称、字数为示例数据，仅用于展示索引结构。</span>
+      <span>© 2026 糖心情深叉喔 创作索引 · 标注“未确认设定”的内容不进入正文推论。</span>
+    </div>
+  </div>
+</footer>
+
+<button class="to-top" id="toTop" type="button" aria-label="回到顶部">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V6M6 12l6-6 6 6"/></svg>
+</button>
+
+<script>
+(function(){
+  "use strict";
+
+  /* 移动端菜单 */
+  var menuBtn = document.getElementById('menuBtn');
+  var headNav = document.getElementById('headNav');
+  if (menuBtn && headNav) {
+    menuBtn.addEventListener('click', function(){
+      var open = headNav.classList.toggle('open');
+      menuBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+      menuBtn.setAttribute('aria-label', open ? '收起导航菜单' : '打开导航菜单');
+    });
+    headNav.addEventListener('click', function(e){
+      if (e.target.tagName === 'A') {
+        headNav.classList.remove('open');
+        menuBtn.setAttribute('aria-expanded','false');
+        menuBtn.setAttribute('aria-label','打开导航菜单');
+      }
+    });
+    document.addEventListener('keydown', function(e){
+      if (e.key === 'Escape' && headNav.classList.contains('open')) {
+        headNav.classList.remove('open');
+        menuBtn.setAttribute('aria-expanded','false');
+        menuBtn.focus();
+      }
+    });
+  }
+
+  /* 回顶 */
+  var toTop = document.getElementById('toTop');
+  function onScroll(){
+    if (window.scrollY > 520) { toTop.classList.add('show'); }
+    else { toTop.classList.remove('show'); }
+  }
+  window.addEventListener('scroll', onScroll, {passive:true});
+  toTop.addEventListener('click', function(){
+    window.scrollTo({top:0, behavior:'smooth'});
+  });
+  onScroll();
+
+  /* 侧栏滚动高亮 */
+  var links = Array.prototype.slice.call(document.querySelectorAll('#sideNavList a'));
+  var sections = links.map(function(a){
+    var id = a.getAttribute('href').replace('/#','');
+    return document.getElementById(id);
+  });
+  function highlight(){
+    var pos = window.scrollY + 160;
+    var idx = -1;
+    for (var i = 0; i < sections.length; i++) {
+      if (sections[i] && sections[i].offsetTop <= pos) { idx = i; }
+    }
+    links.forEach(function(a, i){ a.classList.toggle('active', i === idx); });
+  }
+  window.addEventListener('scroll', highlight, {passive:true});
+  window.addEventListener('resize', highlight);
+  highlight();
+
+  /* 本地搜索 */
+  var input = document.getElementById('siteSearch');
+  var btn = document.getElementById('searchBtn');
+  var searchTargets = Array.prototype.slice.call(document.querySelectorAll('main h2, main h3, main li, main .comment, main details'));
+  var msg = document.createElement('p');
+  msg.className = 'search-msg';
+  msg.setAttribute('role','status');
+  var searchWrap = document.querySelector('.head-tools');
+  if (searchWrap) { searchWrap.parentNode.appendChild(msg); }
+
+  function clearMarks(){
+    Array.prototype.slice.call(document.querySelectorAll('mark[data-hl]')).forEach(function(m){
+      var parent = m.parentNode;
+      parent.replaceChild(document.createTextNode(m.textContent), m);
+      parent.normalize();
+    });
+    msg.style.display = 'none';
+    msg.textContent = '';
+  }
+
+  function doSearch(){
+    clearMarks();
+    var q = input.value.trim();
+    if (!q) { return; }
+    var lowered = q.toLowerCase();
+    var hits = [];
+    searchTargets.forEach(function(el){
+      if (el.textContent.toLowerCase().indexOf(lowered) !== -1) { hits.push(el); }
+    });
+    if (hits.length === 0) {
+      msg.textContent = '没有找到包含“' + q + '”的章节或条目，试试“叉点”“第14章”“夜班糖铺”。';
+      msg.style.display = 'block';
+      return;
+    }
+    /* 高亮首个命中 */
+    var first = hits[0];
+    var walker = document.createTreeWalker(first, NodeFilter.SHOW_TEXT, null);
+    var node, done = false;
+    while (!done && (node = walker.nextNode())) {
+      var txt = node.nodeValue;
+      var at = txt.toLowerCase().indexOf(lowered);
+      if (at !== -1 && txt.trim().length > 0) {
+        var range = document.createRange();
+        range.setStart(node, at);
+        range.setEnd(node, at + q.length);
+        var mark = document.createElement('mark');
+        mark.setAttribute('data-hl','1');
+        mark.style.background = '#f6d7e0';
+        mark.style.color = '#8e2f4e';
+        try {
+          range.surroundContents(mark);
+          done = true;
+        } catch (err) { done = false; }
+      }
+    }
+    var targetSection = first.closest('section');
+    if (targetSection && targetSection.id) {
+      var top = targetSection.getBoundingClientRect().top + window.scrollY - 120;
+      window.scrollTo({top: top, behavior:'smooth'});
+      if (targetSection.tagName === 'DETAILS' || first.tagName === 'DETAILS') {
+        first.setAttribute('open','');
+      }
+    }
+    msg.textContent = '找到 ' + hits.length + ' 处与“' + q + '”相关的条目，已定位到第一处。';
+    msg.style.display = 'block';
+  }
+
+  btn.addEventListener('click', doSearch);
+  input.addEventListener('keydown', function(e){
+    if (e.key === 'Enter') { e.preventDefault(); doSearch(); }
+    if (e.key === 'Escape') { input.value=''; clearMarks(); }
+  });
+})();
+</script>
+</body>
+  </html>
